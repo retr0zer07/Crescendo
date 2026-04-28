@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Marketing | Social Media Management | Crescendo Digital</title>
+    <meta name="description" content="Professional social media management. Strategic content, engagement, and growth on Instagram, Facebook, TikTok, and LinkedIn.">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/styles.css?v=2026.04.04.1245">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- TikTok Pixel (deferred) -->
+<script>
+(function (w, d) {
+    var loaded = false;
+    var ttq = w.ttq = w.ttq || [];
+    ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie", "holdConsent", "revokeConsent", "grantConsent"];
+    ttq.setAndDefer = function (obj, method) {
+        obj[method] = function () {
+            obj.push([method].concat([].slice.call(arguments, 0)));
+        };
+    };
+
+    for (var i = 0; i < ttq.methods.length; i++) {
+        ttq.setAndDefer(ttq, ttq.methods[i]);
+    }
+
+    function loadTikTok() {
+        if (loaded) return;
+        loaded = true;
+        var s = d.createElement('script');
+        s.async = true;
+        s.src = 'https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=D6RIACBC77UA8MCFBND0&lib=ttq';
+        d.head.appendChild(s);
+        ttq.page();
+    }
+
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (evt) {
+        w.addEventListener(evt, loadTikTok, { once: true, passive: true });
+    });
+
+    w.addEventListener('load', function () {
+        setTimeout(loadTikTok, 12000);
+    }, { once: true });
+})(window, document);
+</script>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Social Media Marketing</h1>
+            <p>We build loyal communities around your brand. Strategic content that generates engagement, trust, and sales.</p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn btn-lg btn-primary">Free Audit</a>
+                <a href="#servicios" class="btn btn-lg btn-secondary">View Services</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3><span class="counter" data-target="450">0</span>%</h3>
+                    <p>Average increase in engagement</p>
+                </div>
+                <div class="stat">
+                    <h3><span class="counter" data-target="15">0</span>K+</h3>
+                    <p>Followers managed monthly</p>
+                </div>
+                <div class="stat">
+                    <h3><span class="counter" data-target="120">0</span>+</h3>
+                    <p>Posts created each month</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="servicio-detalle">
+        <div class="container">
+            <div class="servicio-detalle-content">
+                <div class="servicio-detalle-text">
+                    <h2>Why Social Media Marketing</h2>
+                    <p>Your customers are on social media. They spend 3+ hours daily scrolling. If you're not there, your competition is capturing their attention.</p>
+                    
+                    <div class="por-que-items">
+                        <div class="por-que-item">
+                            <div class="item-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div>
+                                <h4>Build Community</h4>
+                                <p>Create a loyal tribe of followers who trust you and buy regularly.</p>
+                            </div>
+                        </div>
+                        <div class="por-que-item">
+                            <div class="item-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div>
+                                <h4>Authentic Engagement</h4>
+                                <p>Content that generates real conversations. Not just "likes" - genuine connections.</p>
+                            </div>
+                        </div>
+                        <div class="por-que-item">
+                            <div class="item-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <h4>Measurable Growth</h4>
+                                <p>Real metrics tracking: followers, engagement rate, clicks, sales.</p>
+                            </div>
+                        </div>
+                        <div class="por-que-item">
+                            <div class="item-icon">
+                                <i class="fas fa-megaphone"></i>
+                            </div>
+                            <div>
+                                <h4>Brand Awareness</h4>
+                                <p>Increase your brand visibility. Everyone will know your business.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicio-detalle-image">
+                    <picture>
+                        <source srcset="img/socialmedia.webp" type="image/webp">
+                        <img src="img/socialmedia.jpg" alt="Social Media Marketing" class="servicio-img" width="800" height="571" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+
+            <h2 style="margin-top: 80px;">Our Services</h2>
+            
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Content Strategy</h3>
+                    <p>Strategic calendar aligned with your business objectives and audience.</p>
+                    <ul class="servicio-features">
+                        <li><i class="fas fa-check"></i> Monthly content calendar</li>
+                        <li><i class="fas fa-check"></i> Strategic topics aligned with objectives</li>
+                        <li><i class="fas fa-check"></i> Content mix: educational, inspirational, promotional</li>
+                        <li><i class="fas fa-check"></i> Hashtag research and trending topics</li>
+                    </ul>
+                </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Community Management</h3>
+                    <p>Building authentic relationships with your audience in real-time.</p>
+                    <ul class="servicio-features">
+                        <li><i class="fas fa-check"></i> Quick response to comments</li>
+                        <li><i class="fas fa-check"></i> Conversation management</li>
+                        <li><i class="fas fa-check"></i> Professional moderation</li>
+                        <li><i class="fas fa-check"></i> Building authentic relationships</li>
+                    </ul>
+                </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Content Creation</h3>
+                    <p>Professional production of photography, video, and design that captures attention.</p>
+                    <ul class="servicio-features">
+                        <li><i class="fas fa-check"></i> Professional photography and videography</li>
+                        <li><i class="fas fa-check"></i> Attractive graphic design</li>
+                        <li><i class="fas fa-check"></i> Persuasive copywriting</li>
+                        <li><i class="fas fa-check"></i> Professional video editing</li>
+                    </ul>
+                </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Scheduled Publishing</h3>
+                    <p>Consistency and planning to maximize reach at optimal times.</p>
+                    <ul class="servicio-features">
+                        <li><i class="fas fa-check"></i> Organized calendar</li>
+                        <li><i class="fas fa-check"></i> Publishing at optimal times</li>
+                        <li><i class="fas fa-check"></i> Daily consistency</li>
+                        <li><i class="fas fa-check"></i> Multi-platform synchronization</li>
+                    </ul>
+                </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-users-between-lines"></i>
+                    </div>
+                    <h3>Influencer Marketing</h3>
+                    <p>Strategic collaborations with influencers to amplify your reach.</p>
+                    <ul class="servicio-features">
+                        <li><i class="fas fa-check"></i> Identification of relevant influencers</li>
+                        <li><i class="fas fa-check"></i> Negotiation and partnerships</li>
+                        <li><i class="fas fa-check"></i> Campaign management</li>
+                        <li><i class="fas fa-check"></i> Influencer ROI measurement</li>
+                    </ul>
+                </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Analysis and Reports</h3>
+                    <p>Clear metrics and data-driven recommendations to optimize results.</p>
+                    <ul class="servicio-features">
+                        <li><i class="fas fa-check"></i> Detailed monthly reports</li>
+                        <li><i class="fas fa-check"></i> Growth metrics</li>
+                        <li><i class="fas fa-check"></i> Competitor analysis</li>
+                        <li><i class="fas fa-check"></i> Improvement recommendations</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 style="margin-top: 80px;">Platforms We Manage</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 30px 0;">
+                <div style="background: white; padding: 20px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); text-align: center;">
+                    <i class="fab fa-facebook" style="font-size: 3rem; color: #1877F2; margin-bottom: 10px;"></i>
+                    <h4>Facebook</h4>
+                    <p>Posts, events, groups</p>
+                </div>
+                <div style="background: white; padding: 20px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); text-align: center;">
+                    <i class="fab fa-instagram" style="font-size: 3rem; color: #E4405F; margin-bottom: 10px;"></i>
+                    <h4>Instagram</h4>
+                    <p>Feed, Stories, Reels</p>
+                </div>
+                <div style="background: white; padding: 20px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); text-align: center;">
+                    <i class="fab fa-tiktok" style="font-size: 3rem; color: #000; margin-bottom: 10px;"></i>
+                    <h4>TikTok</h4>
+                    <p>Viral videos and trends</p>
+                </div>
+                <div style="background: white; padding: 20px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); text-align: center;">
+                    <i class="fab fa-linkedin" style="font-size: 3rem; color: #0A66C2; margin-bottom: 10px;"></i>
+                    <h4>LinkedIn</h4>
+                    <p>B2B and thought leadership</p>
+                </div>
+                <div style="background: white; padding: 20px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); text-align: center;">
+                    <i class="fab fa-youtube" style="font-size: 3rem; color: #FF0000; margin-bottom: 10px;"></i>
+                    <h4>YouTube</h4>
+                    <p>Long-form videos</p>
+                </div>
+                <div style="background: white; padding: 20px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); text-align: center;">
+                    <i class="fab fa-twitter" style="font-size: 3rem; color: #1DA1F2; margin-bottom: 10px;"></i>
+                    <h4>Twitter/X</h4>
+                    <p>Conversations and news</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-final">
+        <div class="container">
+            <h2>Ready to Grow on Social Media?</h2>
+            <p>Get a personalized social media strategy</p>
+            <div class="cta-buttons">
+                <a href="index.html#contacto" class="btn btn-lg btn-primary">Request Strategy</a>
+                <a href="https://wa.me/17867556238" target="_blank" rel="noopener" class="btn btn-lg btn-secondary">WhatsApp <i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js?v=2026.04.04.1245" defer></script>
+    <script src="js/script.js?v=2026.04.04.1245" defer></script>
+</body>
+</html>
+
+

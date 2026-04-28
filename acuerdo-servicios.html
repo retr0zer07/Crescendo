@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101d3b">
+    <title>Acuerdo de Prueba y Servicios | Crescendo Digital Marketing</title>
+    <meta name="description" content="Acuerdo de prueba y servicios de Crescendo Digital Marketing Agency con firma digital y aceptación de términos.">
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding-top: 0;
+            background: #eceff3;
+            color: #1f2937;
+            font-family: 'Source Sans 3', sans-serif;
+        }
+
+        .container {
+            width: min(1220px, 94vw);
+            margin: 0 auto;
+        }
+
+        .agreement-hero {
+            padding: 28px 0 10px;
+        }
+
+        .document-head {
+            background: #ffffff;
+            border: 1px solid #d7dde5;
+            border-radius: 8px;
+            padding: 22px 24px;
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+            align-items: flex-start;
+        }
+
+        .document-brand {
+            font-family: 'Lora', serif;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            font-size: 0.86rem;
+            color: #4b5563;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .document-head h1 {
+            margin: 0;
+            font-family: 'Lora', serif;
+            color: #111827;
+            font-size: clamp(1.45rem, 2.8vw, 2.2rem);
+            line-height: 1.25;
+        }
+
+        .document-subtitle {
+            margin: 12px 0 0;
+            max-width: 760px;
+            color: #4b5563;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .document-id {
+            border: 1px solid #d7dde5;
+            border-radius: 8px;
+            background: #f8fafb;
+            padding: 10px 12px;
+            min-width: 215px;
+        }
+
+        .document-id p {
+            margin: 0;
+            color: #4b5563;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .agreement-wrap {
+            padding: 12px 0 56px;
+        }
+
+        .agreement-grid {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 16px;
+            align-items: start;
+        }
+
+        .agreement-card {
+            background: #fff;
+            border-radius: 8px;
+            border: 1px solid #d7dde5;
+            padding: 28px;
+        }
+
+        .agreement-card h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.35rem;
+            margin-bottom: 14px;
+            color: #111827;
+            line-height: 1.35;
+        }
+
+        .agreement-card h3 {
+            font-family: 'Lora', serif;
+            font-size: 1.08rem;
+            margin-top: 22px;
+            margin-bottom: 8px;
+            color: #111827;
+        }
+
+        .agreement-card h4 {
+            font-size: 1rem;
+            margin-top: 14px;
+            margin-bottom: 6px;
+            color: #1f2937;
+            font-weight: 700;
+        }
+
+        .agreement-card p,
+        .agreement-card li {
+            color: #374151;
+            font-size: 1.02rem;
+            line-height: 1.7;
+        }
+
+        .agreement-card ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .agreement-divider {
+            height: 1px;
+            background: #d7dde5;
+            margin: 22px 0;
+        }
+
+        .signature-panel {
+            position: sticky;
+            top: 16px;
+        }
+
+        .signature-meta {
+            font-size: 0.92rem;
+            color: #374151;
+            margin-bottom: 14px;
+            background: #f8fafb;
+            border: 1px solid #d7dde5;
+            border-radius: 6px;
+            padding: 10px 12px;
+        }
+
+        .signature-form .form-group {
+            margin-bottom: 16px;
+        }
+
+        .signature-form label {
+            display: block;
+            margin-bottom: 6px;
+            color: #111827;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .signature-form input,
+        .signature-form textarea {
+            width: 100%;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            padding: 11px 12px;
+            font-size: 0.96rem;
+            font-family: 'Source Sans 3', sans-serif;
+            background: #fff;
+        }
+
+        .signature-form input:focus,
+        .signature-form textarea:focus {
+            outline: none;
+            border-color: #1f2937;
+            box-shadow: 0 0 0 2px rgba(31, 41, 55, 0.08);
+        }
+
+        .signature-pad {
+            background: #fff;
+            border: 1px dashed #94a3b8;
+            border-radius: 6px;
+            width: 100%;
+            height: 210px;
+            touch-action: none;
+            cursor: crosshair;
+        }
+
+        .signature-controls {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .btn-ghost {
+            border: 1px solid #cbd5e1;
+            background: #f9fafb;
+            color: #1f2937;
+            border-radius: 6px;
+            padding: 9px 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-ghost:hover {
+            border-color: #1f2937;
+            color: #111827;
+            background: #f3f4f6;
+        }
+
+        .consent-block {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin: 18px 0;
+            padding: 12px;
+            background: #f8fafb;
+            border: 1px solid #d7dde5;
+            border-radius: 6px;
+        }
+
+        .consent-block input {
+            width: 18px;
+            height: 18px;
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+
+        .consent-block label {
+            margin-bottom: 0;
+            font-weight: 500;
+            line-height: 1.55;
+            color: #374151;
+            font-size: 0.94rem;
+        }
+
+        .btn-sign {
+            width: 100%;
+            border: 1px solid #111827;
+            border-radius: 6px;
+            background: #111827;
+            color: #ffffff;
+            padding: 14px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .btn-sign:hover {
+            background: #000;
+        }
+
+        .legal-note {
+            margin-top: 11px;
+            font-size: 0.86rem;
+            color: #6b7280;
+            text-align: left;
+        }
+
+        .signature-hint {
+            margin-top: 8px;
+            font-size: 0.86rem;
+            color: #6b7280;
+            line-height: 1.45;
+        }
+
+        .btn-pdf {
+            width: 100%;
+            border: 1px solid #374151;
+            border-radius: 6px;
+            background: transparent;
+            color: #374151;
+            padding: 12px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 8px;
+            transition: background 0.2s ease;
+        }
+
+        .btn-pdf:hover {
+            background: #f3f4f6;
+        }
+
+        /* ===== ESTILOS DE IMPRESION ===== */
+        .print-data-block {
+            display: none;
+        }
+
+        @media print {
+            .agreement-hero,
+            .signature-panel,
+            .signature-controls,
+            .btn-sign,
+            .btn-pdf,
+            .legal-note,
+            .consent-block {
+                display: none !important;
+            }
+
+            body {
+                background: #fff !important;
+            }
+
+            .agreement-wrap {
+                padding: 0 !important;
+            }
+
+            .agreement-grid {
+                grid-template-columns: 1fr !important;
+                gap: 0 !important;
+            }
+
+            .agreement-card {
+                box-shadow: none !important;
+                border: none !important;
+                border-radius: 0 !important;
+                padding: 0 !important;
+            }
+
+            .container {
+                width: 100% !important;
+                padding: 0 !important;
+            }
+
+            .print-data-block {
+                display: block !important;
+                margin-top: 32px;
+                padding-top: 24px;
+                border-top: 2px solid #111827;
+            }
+
+            .print-data-block h3 {
+                font-size: 1rem;
+                margin-bottom: 14px;
+                color: #111827;
+            }
+
+            .print-data-block table {
+                width: 100%;
+                border-collapse: collapse;
+                font-size: 0.95rem;
+                margin-bottom: 20px;
+            }
+
+            .print-data-block td {
+                padding: 6px 8px;
+                border-bottom: 1px solid #e5e7eb;
+                color: #1f2937;
+            }
+
+            .print-data-block td:first-child {
+                font-weight: 700;
+                width: 38%;
+            }
+
+            .print-signature-img {
+                max-width: 320px;
+                border: 1px solid #d1d5db;
+                border-radius: 4px;
+                margin-top: 10px;
+                display: block;
+            }
+
+            .print-footer-brand {
+                margin-top: 28px;
+                font-size: 0.82rem;
+                color: #6b7280;
+                text-align: right;
+            }
+        }
+
+        @media (max-width: 980px) {
+            .document-head {
+                flex-direction: column;
+            }
+
+            .document-id {
+                width: 100%;
+            }
+
+            .agreement-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .signature-panel {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="agreement-hero">
+        <div class="container">
+            <div class="document-head">
+                <div>
+                    <span class="document-brand">Crescendo Digital Marketing Agency</span>
+                    <h1>Acuerdo de Prueba y Servicios</h1>
+                    <p class="document-subtitle">Documento de aceptacion contractual para activacion de servicios, periodo de prueba de 7 dias y autorizacion de cobros recurrentes segun plan seleccionado.</p>
+                </div>
+                <div class="document-id">
+                    <p><strong>Tipo:</strong> Acuerdo de servicios</p>
+                    <p><strong>Version:</strong> 2026.04</p>
+                    <p><strong>Estado:</strong> Vigente</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="agreement-wrap">
+        <div class="container agreement-grid">
+            <article class="agreement-card">
+                <h2>ACUERDO DE PRUEBA Y SERVICIOS - CRESCENDO DIGITAL MARKETING</h2>
+                <p>Al registrarte en esta pagina y proporcionar tu metodo de pago, aceptas los siguientes terminos:</p>
+
+                <div class="agreement-divider"></div>
+
+                <h3>0. RESPONSABILIDADES DE LAS PARTES</h3>
+
+                <h4>Responsabilidades de Crescendo Digital Marketing Agency:</h4>
+                <ul>
+                    <li>Disenar, preparar y configurar la estructura inicial del sistema de marketing.</li>
+                    <li>Implementar estrategias orientadas a generar visibilidad y oportunidades de negocio a corto, mediano y largo plazo.</li>
+                    <li>Dar seguimiento y optimizacion inicial durante el periodo de prueba.</li>
+                </ul>
+
+                <h4>Responsabilidades del Cliente:</h4>
+                <ul>
+                    <li>Proporcionar informacion veraz y necesaria para la ejecucion del servicio.</li>
+                    <li>Mantener comunicacion activa cuando sea requerido.</li>
+                    <li>Contar con un metodo de pago valido y con fondos disponibles.</li>
+                    <li>Dar seguimiento a los leads generados (si aplica).</li>
+                </ul>
+
+                <h4>Incumplimiento:</h4>
+                <ul>
+                    <li>Si el cliente no proporciona informacion o colaboracion, los resultados pueden verse afectados sin responsabilidad de la empresa.</li>
+                    <li>Si la empresa incumple de forma significativa el servicio acordado, el cliente podra solicitar revision del caso.</li>
+                    <li>En caso de incumplimiento de pago por parte del cliente, y habiendose iniciado el servicio o realizado trabajo por parte de la empresa, el cliente reconoce que el servicio fue ejecutado y se mantiene la obligacion de pago por el trabajo realizado.</li>
+                </ul>
+
+                <h4>Acciones adicionales en caso de incumplimiento prolongado (15 dias):</h4>
+                <ul>
+                    <li>Cancelacion definitiva del servicio</li>
+                    <li>Eliminacion de accesos, perfiles y campanas</li>
+                    <li>Posible inicio de procesos de recuperacion o legales</li>
+                </ul>
+
+                <h3>1. PERIODO DE PRUEBA (GENERACION DE CONFIANZA)</h3>
+                <p>El cliente recibira un periodo de prueba de 7 dias, cuyo objetivo es:</p>
+                <ul>
+                    <li>Generar confianza en el servicio y demostrar que somos una empresa real, profesional y comprometida con nuestros clientes.</li>
+                    <li>Disenar, preparar y estructurar el sistema de marketing.</li>
+                    <li>Mostrar el proceso, la organizacion y el movimiento inicial del trabajo.</li>
+                </ul>
+                <p>El cliente entiende que:</p>
+                <ul>
+                    <li>Este periodo NO esta disenado para generar resultados finales inmediatos.</li>
+                    <li>Los resultados dependen de multiples factores como el nicho, ubicacion, oferta y competencia.</li>
+                </ul>
+
+                <h3>2. ACTIVACION AUTOMATICA Y COBROS</h3>
+                <p>Al finalizar el periodo de prueba:</p>
+                <ul>
+                    <li>El servicio se activara automaticamente.</li>
+                    <li>Se realizara el cobro automatico al metodo de pago proporcionado.</li>
+                    <li>Los pagos seran recurrentes mes a mes segun el plan seleccionado.</li>
+                    <li>El servicio continuara sin interrupciones para mantener el rendimiento del sistema.</li>
+                </ul>
+                <p>El cliente autoriza expresamente estos cobros al aceptar este acuerdo.</p>
+
+                <h3>3. CONTINUIDAD DEL SERVICIO Y RESULTADOS</h3>
+                <ul>
+                    <li>Se recomienda mantener el servicio por un periodo minimo de varios meses (idealmente 3 meses).</li>
+                    <li>Los resultados reales se desarrollan a medida que el sistema recopila datos y se optimiza.</li>
+                </ul>
+                <p>El cliente entiende que el marketing es un proceso progresivo, no inmediato.</p>
+
+                <h3>4. CANCELACION</h3>
+                <ul>
+                    <li>El cliente puede cancelar en cualquier momento.</li>
+                    <li>Sin embargo, la cancelacion no detiene cobros ya procesados ni trabajos ya ejecutados.</li>
+                    <li>Se recomienda permanecer un minimo de 3 meses para obtener resultados solidos.</li>
+                    <li>En caso de cancelacion, esta aplicara para el siguiente ciclo de facturacion.</li>
+                </ul>
+
+                <h3>5. POLITICA DE NO REEMBOLSO</h3>
+                <p>Todos los pagos son finales y no reembolsables, debido a la naturaleza digital del servicio y la ejecucion inmediata del trabajo.</p>
+
+                <h3>6. FALLAS DE PAGO</h3>
+                <p>En caso de fallo en el pago:</p>
+                <ul>
+                    <li>El sistema intentara procesar el cobro automaticamente en multiples ocasiones.</li>
+                    <li>El servicio podra ser pausado hasta que el pago sea completado.</li>
+                    <li>Las campanas, configuraciones o avances podran verse interrumpidos.</li>
+                </ul>
+                <p>Para evitar fallos de pago, el cliente se compromete a:</p>
+                <ul>
+                    <li>Mantener fondos suficientes en su metodo de pago.</li>
+                    <li>Utilizar una tarjeta valida y activa.</li>
+                    <li>Actualizar su metodo de pago en caso de cualquier inconveniente.</li>
+                </ul>
+                <p>Crescendo Digital Marketing se reserva el derecho de:</p>
+                <ul>
+                    <li>Reintentar el cobro automaticamente.</li>
+                    <li>Contactar al cliente para recuperacion del pago.</li>
+                    <li>Suspender el servicio hasta regularizacion.</li>
+                    <li>Reclamar el pago correspondiente por servicios ya prestados.</li>
+                </ul>
+
+                <h3>7. RESULTADOS Y EXPECTATIVAS</h3>
+                <ul>
+                    <li>Los primeros 7 dias estan enfocados en generar confianza, estructura y sistema.</li>
+                    <li>No se garantizan resultados inmediatos.</li>
+                    <li>Los resultados dependen del nicho, ubicacion, presupuesto, oferta y seguimiento del cliente.</li>
+                </ul>
+
+                <h3>8. COLABORACION Y USO DEL SERVICIO</h3>
+                <p>El cliente acepta colaborar activamente en el proceso.</p>
+                <p>La falta de respuesta, informacion o seguimiento puede afectar directamente los resultados sin responsabilidad de la empresa.</p>
+
+                <h3>9. PROPIEDAD INTELECTUAL</h3>
+                <ul>
+                    <li>Todos los activos creados por la agencia (incluyendo paginas web, estructuras, configuraciones, sistemas y perfiles) seran propiedad intelectual de la agencia durante los primeros 6 meses de servicio, como parte de nuestras politicas internas.</li>
+                    <li>Despues de este periodo, podran ser transferidos o liberados segun acuerdo entre ambas partes.</li>
+                </ul>
+
+                <h3>10. ACEPTACION DEL ACUERDO</h3>
+                <p>Al registrarse y proporcionar su metodo de pago, el cliente confirma que:</p>
+                <ul>
+                    <li>Ha leido y acepta todos los terminos.</li>
+                    <li>Autoriza cobros automaticos y recurrentes.</li>
+                    <li>Entiende la naturaleza del periodo de prueba.</li>
+                    <li>Acepta las condiciones del servicio.</li>
+                </ul>
+
+                <p><strong>CRESCENDO DIGITAL MARKETING AGENCY</strong><br>Genera mas clientes para tu negocio</p>
+
+                <div class="print-data-block" id="print-data-block"></div>
+            </article>
+
+            <aside class="agreement-card signature-panel">
+                <h2>Firma Digital del Acuerdo</h2>
+                <p>Completa este formulario para dejar constancia de aceptacion legal.</p>
+
+                <div class="signature-meta" id="signature-meta">
+                    Fecha y hora local de firma: pendiente.
+                </div>
+
+                <form class="signature-form" action="process_agreement.php" method="post" id="agreement-form">
+                    <div class="form-group">
+                        <label for="full_name">Nombre completo</label>
+                        <input type="text" id="full_name" name="full_name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="id_number">Documento o ID</label>
+                        <input type="text" id="id_number" name="id_number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electronico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefono</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Empresa (opcional)</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="typed_signature">Firma digital (escribe tu r&uacute;brica o nombre)</label>
+                        <input type="text" id="typed_signature" name="typed_signature" placeholder="Tu r&uacute;brica, iniciales o nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signature_pad">Firma manuscrita (pantalla o mouse)</label>
+                        <canvas id="signature_pad" class="signature-pad" width="640" height="210" aria-label="Area de firma"></canvas>
+                        <p class="signature-hint">Usa click sostenido y arrastra para firmar con mouse. En celular, firma con el dedo sobre el recuadro.</p>
+                        <div class="signature-controls">
+                            <button type="button" class="btn-ghost" id="clear-signature">Limpiar firma</button>
+                            <button type="button" class="btn-ghost" id="use-typed-signature">Usar firma escrita</button>
+                        </div>
+                    </div>
+
+                    <input type="hidden" name="signature_image" id="signature_image">
+                    <input type="hidden" name="signed_at" id="signed_at">
+                    <input type="hidden" name="signed_timezone" id="signed_timezone">
+                    <input type="hidden" name="user_agent" id="user_agent">
+
+                    <div class="consent-block">
+                        <input type="checkbox" id="accept_terms" name="accept_terms" required>
+                        <label for="accept_terms">Confirmo que he leido y acepto todos los terminos del Acuerdo de Prueba y Servicios, y autorizo los cobros automaticos y recurrentes segun el plan seleccionado.</label>
+                    </div>
+
+                    <button type="submit" class="btn-sign">Firmar y Aceptar Acuerdo</button>
+                    <button type="button" class="btn-pdf" id="btn-pdf">Descargar copia como PDF</button>
+                    <p class="legal-note">Tu firma digital sera enviada al equipo de Crescendo. Descarga tu copia antes o despues de enviar.</p>
+                </form>
+            </aside>
+        </div>
+    </section>
+
+    <script>
+        (function () {
+            var form = document.getElementById('agreement-form');
+            var signatureCanvas = document.getElementById('signature_pad');
+            var signatureImage = document.getElementById('signature_image');
+            var signedAt = document.getElementById('signed_at');
+            var signedTimezone = document.getElementById('signed_timezone');
+            var userAgent = document.getElementById('user_agent');
+            var signatureMeta = document.getElementById('signature-meta');
+            var fullNameInput = document.getElementById('full_name');
+            var typedSignatureInput = document.getElementById('typed_signature');
+            var clearButton = document.getElementById('clear-signature');
+            var typedButton = document.getElementById('use-typed-signature');
+
+            if (!signatureCanvas || !form) {
+                return;
+            }
+
+            var context = signatureCanvas.getContext('2d');
+            var isDrawing = false;
+            var hasStroke = false;
+            var rect = null;
+
+            function preparePad() {
+                var ratio = Math.max(window.devicePixelRatio || 1, 1);
+                var cssWidth = Math.round(signatureCanvas.getBoundingClientRect().width) || 640;
+                var cssHeight = 210;
+
+                signatureCanvas.width = Math.round(cssWidth * ratio);
+                signatureCanvas.height = Math.round(cssHeight * ratio);
+                signatureCanvas.style.height = cssHeight + 'px';
+
+                context.setTransform(1, 0, 0, 1, 0, 0);
+                context.scale(ratio, ratio);
+                context.lineWidth = 2;
+                context.lineCap = 'round';
+                context.strokeStyle = '#101d3b';
+                clearPad();
+            }
+
+            function clearPad() {
+                context.save();
+                context.setTransform(1, 0, 0, 1, 0, 0);
+                context.clearRect(0, 0, signatureCanvas.width, signatureCanvas.height);
+                context.restore();
+                hasStroke = false;
+                signatureImage.value = '';
+            }
+
+            function getPosition(event) {
+                rect = signatureCanvas.getBoundingClientRect();
+                return {
+                    x: event.clientX - rect.left,
+                    y: event.clientY - rect.top
+                };
+            }
+
+            function startDraw(event) {
+                if (event.pointerType === 'mouse' && event.button !== 0) {
+                    return;
+                }
+                event.preventDefault();
+                signatureCanvas.setPointerCapture(event.pointerId);
+                isDrawing = true;
+                var pos = getPosition(event);
+                context.beginPath();
+                context.moveTo(pos.x, pos.y);
+            }
+
+            function draw(event) {
+                if (!isDrawing) {
+                    return;
+                }
+                event.preventDefault();
+                var pos = getPosition(event);
+                context.lineTo(pos.x, pos.y);
+                context.stroke();
+                hasStroke = true;
+            }
+
+            function endDraw() {
+                if (!isDrawing) {
+                    return;
+                }
+                isDrawing = false;
+                context.closePath();
+            }
+
+            signatureCanvas.addEventListener('pointerdown', startDraw);
+            signatureCanvas.addEventListener('pointermove', draw);
+            signatureCanvas.addEventListener('pointerup', endDraw);
+            signatureCanvas.addEventListener('pointerleave', endDraw);
+            signatureCanvas.addEventListener('pointercancel', endDraw);
+
+            window.addEventListener('resize', preparePad);
+
+            clearButton.addEventListener('click', clearPad);
+
+            typedButton.addEventListener('click', function () {
+                var value = typedSignatureInput.value.trim();
+                if (!value) {
+                    alert('Primero escribe tu nombre en el campo de firma digital.');
+                    typedSignatureInput.focus();
+                    return;
+                }
+
+                clearPad();
+                context.font = '34px "Brush Script MT", "Segoe Script", cursive';
+                context.fillStyle = '#101d3b';
+                context.fillText(value, 20, 110);
+                hasStroke = true;
+            });
+
+            form.addEventListener('submit', function (event) {
+                var now = new Date();
+                var fullName = fullNameInput.value.trim();
+                var typedName = typedSignatureInput.value.trim();
+
+                if (!typedName) {
+                    event.preventDefault();
+                    alert('Por favor ingresa tu firma en el campo de firma escrita.');
+                    typedSignatureInput.focus();
+                    return;
+                }
+
+                if (!hasStroke) {
+                    event.preventDefault();
+                    alert('Debes firmar en el area de firma o usar el boton "Usar firma escrita".');
+                    return;
+                }
+
+                signatureImage.value = signatureCanvas.toDataURL('image/png');
+                signedAt.value = now.toISOString();
+                signedTimezone.value = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+                userAgent.value = navigator.userAgent;
+            });
+
+            var nowText = new Date().toLocaleString('es-US', {
+                year: 'numeric',
+                month: 'long',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+            signatureMeta.textContent = 'Fecha y hora local de firma: ' + nowText;
+
+            preparePad();
+
+            // ===== GENERAR PDF Y ENVIAR POR CORREO =====
+            document.getElementById('btn-pdf').addEventListener('click', function () {
+                var name     = fullNameInput.value.trim();
+                var idNum    = document.getElementById('id_number').value.trim();
+                var emailVal = document.getElementById('email').value.trim();
+                var phoneVal = document.getElementById('phone').value.trim();
+                var company  = document.getElementById('company').value.trim();
+                var typed    = typedSignatureInput.value.trim();
+                var dateText = signatureMeta.textContent;
+                var sigSrc   = hasStroke ? signatureCanvas.toDataURL('image/png') : null;
+
+                // Fallback si jsPDF no cargó
+                if (!window.jspdf) {
+                    alert('No se pudo cargar la librería PDF. Usa Ctrl+P / Cmd+P para imprimir desde el navegador.');
+                    return;
+                }
+
+                var jsPDF = window.jspdf.jsPDF;
+                var doc   = new jsPDF({ unit: 'mm', format: 'a4' });
+                var pageW  = doc.internal.pageSize.getWidth();
+                var margin = 18;
+                var col1W  = 62;
+                var y      = 22;
+
+                // Cabecera
+                doc.setFont('helvetica', 'bold');
+                doc.setFontSize(13);
+                doc.setTextColor(26, 26, 46);
+                doc.text('CRESCENDO DIGITAL MARKETING AGENCY', pageW / 2, y, { align: 'center' });
+                y += 7;
+                doc.setFontSize(10.5);
+                doc.text('Acuerdo de Prueba y Servicios', pageW / 2, y, { align: 'center' });
+                y += 5;
+                doc.setFont('helvetica', 'normal');
+                doc.setFontSize(8.5);
+                doc.setTextColor(100, 100, 120);
+                doc.text('Versión 2026.04  |  Documento confidencial', pageW / 2, y, { align: 'center' });
+                y += 9;
+
+                // Línea divisoria
+                doc.setDrawColor(26, 26, 46);
+                doc.setLineWidth(0.5);
+                doc.line(margin, y, pageW - margin, y);
+                y += 9;
+
+                // Título sección
+                doc.setFont('helvetica', 'bold');
+                doc.setFontSize(9.5);
+                doc.setTextColor(30, 30, 30);
+                doc.text('DATOS DEL FIRMANTE Y CONSTANCIA DE ACEPTACIÓN', margin, y);
+                y += 9;
+
+                // Filas de datos
+                var rows = [
+                    ['Nombre completo',        name     || '(pendiente)'],
+                    ['Documento / ID',          idNum    || '(pendiente)'],
+                    ['Correo electrónico',      emailVal || '(pendiente)'],
+                    ['Teléfono',                phoneVal || '(pendiente)'],
+                    ['Empresa',                 company  || 'No especificada'],
+                    ['Firma digital escrita',   typed    || '(pendiente)'],
+                    ['Aceptación de términos',  (typed && name) ? 'SÍ — Acepto todos los términos' : '(pendiente)'],
+                    ['Fecha y hora de firma',   dateText || new Date().toLocaleString('es')]
+                ];
+
+                doc.setFontSize(9);
+                rows.forEach(function (r) {
+                    doc.setFont('helvetica', 'bold');
+                    doc.setTextColor(30, 30, 30);
+                    doc.text(r[0] + ':', margin, y);
+                    doc.setFont('helvetica', 'normal');
+                    doc.setTextColor(60, 60, 60);
+                    var lines = doc.splitTextToSize(String(r[1]), pageW - margin * 2 - col1W);
+                    doc.text(lines, margin + col1W, y);
+                    y += Math.max(lines.length, 1) * 5.8;
+                });
+
+                // Firma manuscrita
+                if (sigSrc) {
+                    y += 4;
+                    doc.setFont('helvetica', 'bold');
+                    doc.setFontSize(9);
+                    doc.setTextColor(30, 30, 30);
+                    doc.text('Firma manuscrita:', margin, y);
+                    y += 5;
+                    var sigRatio = signatureCanvas.width / signatureCanvas.height;
+                    var sigW = 80;
+                    var sigH = Math.round(sigW / sigRatio);
+                    doc.addImage(sigSrc, 'PNG', margin, y, sigW, sigH);
+                    y += sigH + 8;
+                }
+
+                // Línea inferior
+                y += 4;
+                doc.setDrawColor(200, 200, 200);
+                doc.setLineWidth(0.3);
+                doc.line(margin, y, pageW - margin, y);
+                y += 6;
+
+                // Pie de página
+                doc.setFont('helvetica', 'italic');
+                doc.setFontSize(7.5);
+                doc.setTextColor(140, 140, 140);
+                doc.text(
+                    'Crescendo Digital Marketing Agency  —  Acuerdo de Prueba y Servicios  —  Versión 2026.04',
+                    pageW / 2, y, { align: 'center' }
+                );
+
+                // Descargar
+                var safeName = (name || 'cliente').replace(/[^\w\s]/g, '').trim().replace(/\s+/g, '_');
+                var fileName = 'Acuerdo_Crescendo_' + safeName + '.pdf';
+                doc.save(fileName);
+
+                // Enviar al servidor para que llegue al correo
+                var pdfBase64 = doc.output('datauristring').split(',')[1];
+                fetch('send_pdf_email.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        pdf_data: pdfBase64,
+                        file_name: fileName,
+                        signer_name: name  || '(desconocido)',
+                        signer_email: emailVal || ''
+                    })
+                }).catch(function () {});
+            });
+
+        })();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+</body>
+</html>

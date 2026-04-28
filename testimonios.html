@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Testimonials | Crescendo Digital</title>
+    <meta name="description" content="A gallery of testimonial videos prepared to strengthen trust and credibility in the project.">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/styles.css?v=2026.04.04.1245">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .testimonials-page-hero {
+            background:
+                radial-gradient(circle at top left, rgba(245, 184, 42, 0.24), transparent 34%),
+                radial-gradient(circle at bottom right, rgba(27, 138, 138, 0.2), transparent 36%),
+                linear-gradient(145deg, #081224 0%, #101d3b 52%, #173b53 100%);
+        }
+
+        .testimonials-page {
+            padding: 130px 20px 90px;
+            background: linear-gradient(180deg, #ffffff 0%, #f4f6fa 100%);
+            margin-top: 52px;
+        }
+
+        .testimonials-page .section-header {
+            margin-bottom: 42px;
+        }
+
+        .video-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 28px;
+            align-items: start;
+        }
+
+        .video-card {
+            background: #fff;
+            border: 1px solid rgba(16, 29, 59, 0.08);
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 14px 36px rgba(15, 23, 42, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: 360px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .video-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 48px rgba(15, 23, 42, 0.14);
+        }
+
+        .video-frame {
+            position: relative;
+            aspect-ratio: 9 / 16;
+            background: #000;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .video-frame.ready {
+            background: #000;
+        }
+
+        .video-frame video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background: #000;
+            display: block;
+        }
+
+        .video-file {
+            display: inline-flex;
+            padding: 10px 14px;
+            border-radius: 999px;
+            font-size: 0.82rem;
+            background: rgba(16, 29, 59, 0.06);
+            border: 1px solid rgba(16, 29, 59, 0.1);
+            color: #334155;
+            word-break: break-all;
+            margin-top: 14px;
+        }
+
+        .video-card-body {
+            padding: 24px;
+        }
+
+        .video-slot {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 12px;
+            border-radius: 999px;
+            margin-bottom: 12px;
+            background: rgba(245, 184, 42, 0.14);
+            color: #101d3b;
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .video-card-body h3 {
+            margin-bottom: 8px;
+            color: #101d3b;
+        }
+
+        .video-card-body p {
+            margin-bottom: 0;
+        }
+
+        .video-page-cta {
+            margin-top: 72px;
+            padding-top: 84px;
+        }
+
+        @media (max-width: 768px) {
+            .testimonials-page {
+                padding: 96px 20px 72px;
+                margin-top: 36px;
+            }
+
+            .video-card {
+                border-radius: 22px;
+            }
+
+            .video-page-cta {
+                margin-top: 48px;
+                padding-top: 64px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="hero testimonials-page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-i18n="testimonialsHeroTitle">Video Testimonials</h1>
+                <p data-i18n="testimonialsHeroDescription">A gallery designed to strengthen trust in the project through real client videos.</p>
+                <div class="hero-buttons">
+                    <a href="index.html#contacto" class="btn btn-lg btn-primary" data-i18n="testimonialsCta">Request Free Audit</a>
+                    <a href="casos-de-exito.html" class="btn btn-lg btn-secondary" data-i18n="navSuccessStories">Success Stories</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-page">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="testimonialsIntroTitle">Real Stories From Real Clients</h2>
+                <p data-i18n="testimonialsIntroDescription">Each video shows direct experiences from brands that trusted Crescendo to grow their visibility, leads, and results.</p>
+            </div>
+
+            <div class="video-gallery">
+                <article class="video-card">
+                    <div class="video-frame" data-video-frame>
+                        <video controls preload="metadata" src="videos/Eber%20Martini.mp4"></video>
+                    </div>
+                    <div class="video-card-body">
+                        <span class="video-slot" data-i18n="testimonialsSlotLabel">Video slot</span>
+                        <h3 data-i18n="testimonialsCard1Title">Eber Martini</h3>
+                        <p data-i18n="testimonialsCard1Description">A live testimonial that reinforces trust in the Crescendo process and overall client experience.</p>
+                        <div class="video-file">videos/Eber Martini.mp4</div>
+                    </div>
+                </article>
+
+                <article class="video-card">
+                    <div class="video-frame" data-video-frame>
+                        <video controls preload="metadata" src="videos/0316.mp4"></video>
+                    </div>
+                    <div class="video-card-body">
+                        <span class="video-slot" data-i18n="testimonialsSlotLabel">Video slot</span>
+                        <h3 data- ="testimonialsCard2Title">Alejandro Morua</h3>
+                        <p data-i18n="testimonialsCard2Description">A second active video in the gallery to strengthen credibility with another real client voice.</p>
+                        <div class="video-file">videos/0316.mp4</div>
+                    </div>
+                </article>
+
+                <article class="video-card">
+                    <div class="video-frame" data-video-frame>
+                        <video controls preload="metadata" src="videos/0313.mov"></video>
+                    </div>
+                    <div class="video-card-body">
+                        <span class="video-slot" data-i18n="testimonialsSlotLabel">Video slot</span>
+                        <h3 data-="testimonialsCard3Title">Nicky Massage</h3>
+                        <p data-i18n="testimonialsCard3Description">A third video that adds more social proof and confidence for future clients.</p>
+                        <div class="video-file">videos/0313.mov</div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-final video-page-cta">
+        <div class="container">
+            <h2 data-i18n="testimonialsHeroTitle">Video Testimonials</h2>
+            <p data-i18n="testimonialsHeroDescription">A gallery designed to strengthen trust in the project through real client videos.</p>
+            <div class="cta-buttons">
+                <a href="index.html#contacto" class="btn btn-lg btn-primary" data-i18n="testimonialsCta">Request Free Audit</a>
+                <a href="casos-de-exito.html" class="btn btn-lg btn-secondary" data-i18n="navSuccessStories">Success Stories</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js?v=2026.04.04.1245" defer></script>
+    <script src="js/script.js?v=2026.04.04.1245" defer></script>
+</body>
+</html>

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101d3b">
+    <title>Professional Client Questionnaire | Crescendo Digital Marketing</title>
+    <meta name="description" content="Complete this form so we can better understand your business and prepare the best digital marketing strategy for you.">
+    
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/styles.css?v=2026.04.04.1245">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        .hero {
+            position: relative;
+            overflow: hidden;
+            padding: 120px 20px 80px;
+            text-align: center;
+            color: white;
+        }
+        
+        #particlesCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+        
+        .form-section {
+            background: white;
+            border-radius: 16px;
+            padding: 40px 30px;
+            margin: 40px auto;
+            max-width: 900px;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+        }
+        
+        .form-section h2 {
+            color: #101d3b;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .form-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(135deg, #F5B82A, #FFD700);
+            border-radius: 2px;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #101d3b;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #F5B82A;
+            box-shadow: 0 0 0 3px rgba(245, 184, 42, 0.15);
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .file-upload {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+        
+        .file-upload input[type="file"] {
+            position: absolute;
+            left: -9999px;
+        }
+        
+        .file-upload-label {
+            display: block;
+            padding: 14px 16px;
+            background: #f8f9fa;
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .file-upload-label:hover {
+            background: #f0f0f0;
+            border-color: #F5B82A;
+        }
+        
+        .submit-cta {
+            text-align: center;
+            margin: 60px 0 40px;
+        }
+        
+        .btn-submit {
+            background: linear-gradient(135deg, #F5B82A, #FFD700);
+            color: #101d3b;
+            padding: 18px 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(245, 184, 42, 0.3);
+        }
+        
+        .btn-submit:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(245, 184, 42, 0.4);
+        }
+        
+        .standalone-lang-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: white;
+            border-radius: 50px;
+            padding: 8px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+            display: flex;
+            gap: 5px;
+        }
+        
+        .standalone-lang-btn {
+            padding: 10px 20px;
+            border: none;
+            background: transparent;
+            color: #666;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .standalone-lang-btn.active {
+            background: linear-gradient(135deg, #F5B82A, #FFD700);
+            color: #101d3b;
+        }
+        
+        .lang-content {
+            display: none;
+        }
+        
+        .lang-content.active {
+            display: block;
+        }
+        
+        .checkbox-group {
+            margin: 30px auto;
+            max-width: 900px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .checkbox-group label {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            cursor: pointer;
+            color: #333;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .checkbox-group input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-top: 3px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .form-section {
+                padding: 30px 20px;
+                margin: 20px auto;
+            }
+            .checkbox-group {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+<!-- TikTok Pixel (deferred) -->
+<script>
+(function (w, d) {
+    var loaded = false;
+    var ttq = w.ttq = w.ttq || [];
+    ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie", "holdConsent", "revokeConsent", "grantConsent"];
+    ttq.setAndDefer = function (obj, method) {
+        obj[method] = function () {
+            obj.push([method].concat([].slice.call(arguments, 0)));
+        };
+    };
+
+    for (var i = 0; i < ttq.methods.length; i++) {
+        ttq.setAndDefer(ttq, ttq.methods[i]);
+    }
+
+    function loadTikTok() {
+        if (loaded) return;
+        loaded = true;
+        var s = d.createElement('script');
+        s.async = true;
+        s.src = 'https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=D6RIACBC77UA8MCFBND0&lib=ttq';
+        d.head.appendChild(s);
+        ttq.page();
+    }
+
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (evt) {
+        w.addEventListener(evt, loadTikTok, { once: true, passive: true });
+    });
+
+    w.addEventListener('load', function () {
+        setTimeout(loadTikTok, 12000);
+    }, { once: true });
+})(window, document);
+</script>
+    <script src="js/components.js?v=2026.04.04.1245" defer></script>
+</head>
+<body>
+
+    <!-- Toggle de idioma -->
+    <div class="standalone-lang-toggle">
+        <button class="standalone-lang-btn" data-lang="es">ES</button>
+        <button class="standalone-lang-btn active" data-lang="en">EN</button>
+    </div>
+
+    <!-- Contenido Español -->
+    <div class="lang-content" id="content-es">
+        <section class="hero cta-final">
+            <canvas id="particlesCanvas"></canvas>
+            <div class="hero-content">
+                <h1>Cuestionario para Cliente Profesional</h1>
+                <p>Para ofrecerte la mejor estrategia de marketing digital personalizada, necesitamos conocer más sobre tu negocio. Este formulario nos ayudará a entender tus necesidades.</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <form action="process_form.php" method="POST" enctype="multipart/form-data">
+                <!-- Información General -->
+                <div class="form-section">
+                    <h2>Información General</h2>
+                    <p style="color:#666; font-size:0.98rem; margin-bottom:18px;">Por favor, ingresa el <b>nombre legal y dirección de la empresa</b> (no datos personales del representante).</p>
+                    <div class="form-group"><label>Nombre de la empresa *</label><input type="text" name="nombre" required></div>
+                    <div class="form-group"><label>Dirección exacta de la empresa *</label><input type="text" name="direccion" required></div>
+                    <div class="form-group"><label>EIN (Employer Identification Number)</label><input type="text" name="ein"></div>
+                    <div class="form-group"><label>Registro comercial (Sunbiz.org)</label><input type="url" name="registro_comercial" placeholder="https://..."></div>
+                    <div class="form-group"><label>Año de inicio de operaciones</label><input type="number" name="anio_inicio" min="1900" max="2025"></div>
+                </div>
+                <!-- Contacto -->
+                <div class="form-section">
+                    <h2>Contacto</h2>
+                    <div class="form-group"><label>Teléfono *</label><input type="tel" name="telefono" required></div>
+                    <div class="form-group"><label>Email *</label><input type="email" name="email" required></div>
+                    <div class="form-group"><label>Canales de contacto preferidos</label><textarea name="canales_preferidos" placeholder="Ej: WhatsApp, Email, Llamada..."></textarea></div>
+                </div>
+                <!-- Operación del Negocio -->
+                <div class="form-section">
+                    <h2>Operación del Negocio</h2>
+                    <div class="form-group"><label>Días de operación</label><input type="text" name="dias_operacion" placeholder="Ej: Lunes a Viernes"></div>
+                    <div class="form-group"><label>Horario</label><input type="text" name="horario" placeholder="Ej: 9:00 AM - 6:00 PM"></div>
+                    <div class="form-group"><label>Días especiales / feriados</label><textarea name="dias_especiales"></textarea></div>
+                    <div class="form-group"><label>Métodos de pago aceptados</label><textarea name="metodos_pago" placeholder="Ej: Efectivo, Tarjetas, Zelle, etc."></textarea></div>
+                    <div class="form-group"><label>¿Ofrece descuentos?</label><textarea name="descuentos"></textarea></div>
+                    <div class="form-group"><label>¿Tiene sucursales?</label><select name="sucursales"><option value="no">No</option><option value="si">Sí</option></select></div>
+                    <div class="form-group"><label>Servicios ofrecidos *</label><textarea name="servicios" required></textarea></div>
+                    <div class="form-group"><label>Público objetivo *</label><textarea name="publico_objetivo" required></textarea></div>
+                </div>
+                <!-- Marketing y Ventas -->
+                <div class="form-section">
+                    <h2>Marketing y Ventas</h2>
+                    <div class="form-group"><label>Canales de marketing más importantes actualmente</label><textarea name="canales_marketing"></textarea></div>
+                    <div class="form-group"><label>¿Ha realizado campañas pagas antes?</label><select name="campanas_pagas"><option value="no">No</option><option value="si">Sí</option></select></div>
+                    <div class="form-group"><label>¿Tienen reseñas en Google?</label><select name="resenas_google"><option value="no">No</option><option value="si">Sí</option></select></div>
+                    <div class="form-group"><label>¿Responden reseñas?</label><select name="responden_resenas"><option value="no">No</option><option value="si">Sí</option><option value="a_veces">A veces</option></select></div>
+                </div>
+                <!-- Sitio Web y Reservas -->
+                <div class="form-section">
+                    <h2>Sitio Web y Reservas</h2>
+                    <div class="form-group"><label>¿Clientes pueden reservar, pedir o consultar desde el sitio web?</label><select name="reservas_web"><option value="no">No</option><option value="si">Sí</option></select></div>
+                    <div class="form-group"><label>Gestión de reservas (si aplica)</label><input type="text" name="gestion_reservas"></div>
+                    <div class="form-group"><label>Tipo de agenda (si aplica)</label><input type="text" name="tipo_agenda" placeholder="Ej: Calendly, manual, etc."></div>
+                    <div class="form-group"><label>Tipo de experiencia deseada para el cliente en el sitio web</label><textarea name="experiencia_deseada"></textarea></div>
+                </div>
+                <!-- Archivos Adjuntos -->
+                <div class="form-section">
+                    <h2>Archivos Adjuntos</h2>
+                    <div class="form-group">
+                        <label>Logotipo (adjuntar)</label>
+                        <div class="file-upload">
+                            <input type="file" name="logotipo" id="logotipo" accept="image/*">
+                            <label for="logotipo" class="file-upload-label">Haz clic para subir tu logotipo (PNG, JPG, SVG)</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Fotos del local (adjuntar varias si es posible)</label>
+                        <div class="file-upload">
+                            <input type="file" name="fotos_local[]" id="fotos_local" accept="image/*" multiple>
+                            <label for="fotos_local" class="file-upload-label">Haz clic para subir fotos del local</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Registro comercial (foto o PDF)</label>
+                        <div class="file-upload">
+                            <input type="file" name="registro_comercial_file" id="registro_comercial_file" accept="image/*,application/pdf">
+                            <label for="registro_comercial_file" class="file-upload-label">Adjuntar registro comercial</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Comentarios Finales -->
+                <div class="form-section">
+                    <h2>Comentarios Finales</h2>
+                    <div class="form-group"><label>Comentarios adicionales</label><textarea name="comentarios_adicionales" placeholder="Cualquier información extra que consideres importante..."></textarea></div>
+                </div>
+                
+                <!-- Consentimiento SMS -->
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="sms_consent" value="yes" required>
+                        <span>Acepto recibir mensajes SMS de Crescendo Digital Marketing Agency sobre actualizaciones de servicio, confirmaciones de citas, seguimientos y promociones ocasionales. La frecuencia de mensajes varía. Pueden aplicarse tarifas de mensajería y datos. Responde STOP para darte de baja. Responde HELP para obtener ayuda.</span>
+                    </label>
+                </div>
+                
+                <input type="hidden" name="lang" value="es">
+                <div class="submit-cta">
+                    <button type="submit" class="btn-submit">Enviar Cuestionario</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contenido Inglés (traducción completa del formulario) -->
+    <div class="lang-content active" id="content-en">
+        <section class="hero cta-final">
+            <canvas id="particlesCanvas"></canvas>
+            <div class="hero-content">
+                <h1>Professional Client Questionnaire</h1>
+                <p>To provide you with the best personalized digital marketing strategy, we need to know more about your business. This form will help us understand your needs.</p>
+            </div>
+        </section>
+            <form action="process_form.php" method="POST" enctype="multipart/form-data" accept-charset="UTF-8">
+        <div class="container">
+                <!-- General Information -->
+                <div class="form-section">
+                    <h2>General Information</h2>
+                    <p style="color:#666; font-size:0.98rem; margin-bottom:18px;">Please enter the <b>legal business name and address</b> (not the personal data of the representative).</p>
+                    <div class="form-group"><label>Business Name *</label><input type="text" name="nombre" required></div>
+                    <div class="form-group"><label>Business Address *</label><input type="text" name="direccion" required></div>
+                    <div class="form-group"><label>EIN (Employer Identification Number)</label><input type="text" name="ein"></div>
+                    <div class="form-group"><label>Business Registration (Sunbiz.org)</label><input type="url" name="registro_comercial" placeholder="https://..."></div>
+                    <div class="form-group">
+                        <label>Business Registration (photo or PDF)</label>
+                        <div class="file-upload">
+                            <input type="file" name="registro_comercial_file" id="registro_comercial_file_en" accept="image/*,application/pdf">
+                            <label for="registro_comercial_file_en" class="file-upload-label">Attach photo or PDF of business registration</label>
+                        </div>
+                    </div>
+                    <div class="form-group"><label>Year Started</label><input type="number" name="anio_inicio" min="1900" max="2025"></div>
+                </div>
+                <!-- Contact -->
+                <div class="form-section">
+                    <h2>Contact</h2>
+                    <div class="form-group"><label>Phone *</label><input type="tel" name="telefono" required></div>
+                    <div class="form-group"><label>Email *</label><input type="email" name="email" required></div>
+                    <div class="form-group"><label>Preferred Contact Channels</label><textarea name="canales_preferidos" placeholder="E.g.: WhatsApp, Email, Call..."></textarea></div>
+                </div>
+                <!-- Business Operation -->
+                <div class="form-section">
+                    <h2>Business Operation</h2>
+                    <div class="form-group"><label>Operating Days</label><input type="text" name="dias_operacion" placeholder="E.g.: Monday to Friday"></div>
+                    <div class="form-group"><label>Hours</label><input type="text" name="horario" placeholder="E.g.: 9:00 AM - 6:00 PM"></div>
+                    <div class="form-group"><label>Special Days / Holidays</label><textarea name="dias_especiales"></textarea></div>
+                    <div class="form-group"><label>Accepted Payment Methods</label><textarea name="metodos_pago" placeholder="E.g.: Cash, Cards, Zelle, etc."></textarea></div>
+                    <div class="form-group"><label>Offers Discounts?</label><textarea name="descuentos"></textarea></div>
+                    <div class="form-group"><label>Has Branches?</label><select name="sucursales"><option value="no">No</option><option value="si">Yes</option></select></div>
+                    <div class="form-group"><label>Services Offered *</label><textarea name="servicios" required></textarea></div>
+                    <div class="form-group"><label>Target Audience *</label><textarea name="publico_objetivo" required></textarea></div>
+                </div>
+                <!-- Marketing & Sales -->
+                <div class="form-section">
+                    <h2>Marketing & Sales</h2>
+                    <div class="form-group"><label>Most Important Marketing Channels Currently</label><textarea name="canales_marketing"></textarea></div>
+                    <div class="form-group"><label>Have you run paid campaigns before?</label><select name="campanas_pagas"><option value="no">No</option><option value="si">Yes</option></select></div>
+                    <div class="form-group"><label>Do you have Google reviews?</label><select name="resenas_google"><option value="no">No</option><option value="si">Yes</option></select></div>
+                    <div class="form-group"><label>Do you respond to reviews?</label><select name="responden_resenas"><option value="no">No</option><option value="si">Yes</option><option value="a_veces">Sometimes</option></select></div>
+                </div>
+                <!-- Website & Bookings -->
+                <div class="form-section">
+                    <h2>Website & Bookings</h2>
+                    <div class="form-group"><label>Can clients book, order, or inquire from the website?</label><select name="reservas_web"><option value="no">No</option><option value="si">Yes</option></select></div>
+                    <div class="form-group"><label>Booking Management (if applicable)</label><input type="text" name="gestion_reservas"></div>
+                    <div class="form-group"><label>Type of calendar (if applicable)</label><input type="text" name="tipo_agenda" placeholder="E.g.: Calendly, manual, etc."></div>
+                    <div class="form-group"><label>Desired client experience on the website</label><textarea name="experiencia_deseada"></textarea></div>
+                </div>
+                <!-- Attachments -->
+                <div class="form-section">
+                    <h2>Attachments</h2>
+                    <div class="form-group">
+                        <label>Logo (attach)</label>
+                        <div class="file-upload">
+                            <input type="file" name="logotipo" id="logotipo_en" accept="image/*">
+                            <label for="logotipo_en" class="file-upload-label">Click to upload your logo (PNG, JPG, SVG)</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Photos of the location (attach several if possible)</label>
+                        <div class="file-upload">
+                            <input type="file" name="fotos_local[]" id="fotos_local_en" accept="image/*" multiple>
+                            <label for="fotos_local_en" class="file-upload-label">Click to upload photos of the location</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Business Registration (photo or PDF)</label>
+                        <div class="file-upload">
+                            <input type="file" name="registro_comercial_file" id="registro_comercial_file_en2" accept="image/*,application/pdf">
+                            <label for="registro_comercial_file_en2" class="file-upload-label">Attach photo or PDF of business registration</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Final Comments -->
+                <div class="form-section">
+                    <h2>Final Comments</h2>
+                    <div class="form-group"><label>Additional comments</label><textarea name="comentarios_adicionales" placeholder="Any extra information you consider important..."></textarea></div>
+                </div>
+                
+                <!-- SMS Consent -->
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="sms_consent" value="yes" required>
+                        <span>I agree to receive SMS messages from Crescendo Digital Marketing Agency regarding service updates, appointment confirmations, follow-ups, and occasional promotions. Message frequency varies. Msg & data rates may apply. Reply STOP to opt out. Reply HELP for help.</span>
+                    </label>
+                </div>
+                
+                <input type="hidden" name="lang" value="en">
+                <div class="submit-cta">
+                    <button type="submit" class="btn-submit">Send Questionnaire</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <div class="footer-bottom-content" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 20px; padding: 30px 0;">
+                    <img src="img/logo.png" alt="Crescendo Digital Marketing" style="height: 50px; width: auto;" loading="lazy">
+                    <p style="margin: 0;">&copy; 2026 Crescendo Digital Marketing Agency. <span class="footer-rights">All rights reserved.</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js?v=2026.04.04.1245" defer></script>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const canvas = document.getElementById('particlesCanvas');
+            if (canvas && typeof initParticles === 'function') {
+                const hero = canvas.parentElement;
+                canvas.width = hero.clientWidth;
+                canvas.height = hero.clientHeight;
+                initParticles(canvas);
+            }
+
+            window.addEventListener('resize', function() {
+                if (canvas) {
+                    canvas.width = hero.clientWidth;
+                    canvas.height = hero.clientHeight;
+                }
+            });
+
+            // Toggle idioma
+            const langButtons = document.querySelectorAll('.standalone-lang-btn');
+            const contentEs = document.getElementById('content-es');
+            const contentEn = document.getElementById('content-en');
+            const footerRights = document.querySelector('.footer-rights');
+            const getPreferredLang = () => localStorage.getItem('preferredLanguage') === 'es' ? 'es' : 'en';
+
+            function applyStandaloneLanguage(lang, persist = true) {
+                langButtons.forEach(button => {
+                    button.classList.toggle('active', button.dataset.lang === lang);
+                });
+
+                if (lang === 'es') {
+                    contentEs.classList.add('active');
+                    contentEn.classList.remove('active');
+                    document.documentElement.lang = 'es';
+                    if (footerRights) footerRights.textContent = 'Todos los derechos reservados.';
+                } else {
+                    contentEs.classList.remove('active');
+                    contentEn.classList.add('active');
+                    document.documentElement.lang = 'en';
+                    if (footerRights) footerRights.textContent = 'All rights reserved.';
+                }
+
+                document.querySelectorAll('input[name="lang"]').forEach(input => {
+                    input.value = lang;
+                });
+
+                if (persist) {
+                    localStorage.setItem('preferredLanguage', lang);
+                }
+                
+                if (typeof normalizeDocumentSpanishTypography === 'function') {
+                    requestAnimationFrame(() => {
+                        normalizeDocumentSpanishTypography(lang);
+                    });
+                }
+            }
+
+            applyStandaloneLanguage(getPreferredLang(), false);
+
+            langButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const lang = this.dataset.lang;
+                    applyStandaloneLanguage(lang, true);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+

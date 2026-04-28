@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Stories | Business Growth | Crescendo Digital</title>
+    <meta name="description" content="Real cases of clients who grew significantly with our digital marketing strategies.">
+    <link rel="stylesheet" href="css/styles.css?v=2026.04.04.1245">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for success stories */
+        section.servicio-detalle > div > div > div[style*="background: white"] {
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        section.servicio-detalle li {
+            color: var(--gray);
+        }
+
+        section.servicio-detalle li:hover {
+            color: var(--primary);
+        }
+
+        /* Hover glow effect on cases */
+        section.servicio-detalle > div > div > div[style*="background: white"]:hover {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+            transform: translateY(-2px);
+        }
+
+        /* Hero with particles */
+        #particlesCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+        }
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Zoom effect on images */
+        .caso-img {
+            transition: transform 0.3s ease, filter 0.3s ease;
+            border-radius: 8px;
+        }
+
+        .caso-img:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Modal animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        #closeModal:hover {
+            color: #bbb;
+            cursor: pointer;
+        }
+    </style>
+<!-- TikTok Pixel (deferred) -->
+<script>
+(function (w, d) {
+    var loaded = false;
+    var ttq = w.ttq = w.ttq || [];
+    ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie", "holdConsent", "revokeConsent", "grantConsent"];
+    ttq.setAndDefer = function (obj, method) {
+        obj[method] = function () {
+            obj.push([method].concat([].slice.call(arguments, 0)));
+        };
+    };
+
+    for (var i = 0; i < ttq.methods.length; i++) {
+        ttq.setAndDefer(ttq, ttq.methods[i]);
+    }
+
+    function loadTikTok() {
+        if (loaded) return;
+        loaded = true;
+        var s = d.createElement('script');
+        s.async = true;
+        s.src = 'https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=D6RIACBC77UA8MCFBND0&lib=ttq';
+        d.head.appendChild(s);
+        ttq.page();
+    }
+
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (evt) {
+        w.addEventListener(evt, loadTikTok, { once: true, passive: true });
+    });
+
+    w.addEventListener('load', function () {
+        setTimeout(loadTikTok, 12000);
+    }, { once: true });
+})(window, document);
+</script>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="hero cta-final">
+        <canvas id="particlesCanvas"></canvas>
+        <div class="hero-content">
+            <h1>Success Stories</h1>
+            <p>Real stories of how we helped businesses like yours grow exponentially.</p>
+        </div>
+    </section>
+
+    <section class="servicio-detalle">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 20px;">Real Results for Real Clients</h2>
+            <p style="text-align: center; font-size: 1.1rem; line-height: 1.8; margin-bottom: 60px;">
+                We don't just talk about marketing, we make it work. Explore how we've helped companies like yours achieve their goals.
+            </p>
+
+            <!-- Case 1: E-commerce -->
+            <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); margin-bottom: 40px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; align-items: stretch;">
+                    <div style="padding: 40px; display: flex; flex-direction: column; justify-content: center;">
+                        <p style="color: #666; font-size: 0.9rem; margin-bottom: 10px; text-transform: uppercase; font-weight: 600;">Client: E-commerce Business | Service: Multi-Channel Marketing</p>
+                        <h3 style="margin-bottom: 10px;">Real Performance Growth</h3>
+                        <p style="color: #666; margin-bottom: 20px;">📍 Miami, FL | 📅 6 Months | 💰 ROI: 350%</p>
+                        <h4>The Challenge</h4>
+                        <p style="margin-bottom: 15px;">A growing e-commerce business needed to scale their digital marketing efforts across multiple channels while maintaining visibility on performance metrics.</p>
+                        <h4>Our Strategy</h4>
+                        <ul style="list-style: none; margin-bottom: 15px;">
+                            <li style="margin-bottom: 8px; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);"><i class="fas fa-check" style="color: #F5B82A; margin-right: 8px; transition: all 0.3s ease;"></i>Integrated marketing strategy combining Google, social media, and paid ads</li>
+                            <li style="margin-bottom: 8px; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);"><i class="fas fa-check" style="color: #F5B82A; margin-right: 8px; transition: all 0.3s ease;"></i>Centralized dashboard to track every click, call, message, and conversion</li>
+                            <li style="transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);"><i class="fas fa-check" style="color: #F5B82A; margin-right: 8px; transition: all 0.3s ease;"></i>Continuous optimization based on real-time data</li>
+                        </ul>
+                        <h4>Results</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-top: 20px;">
+                            <div>
+                                <div style="font-size: 1.8rem; font-weight: bold; color: #F5B82A;">597K+</div>
+                                <p style="color: #666; font-size: 0.9rem;">Impressions in 6 months</p>
+                            </div>
+                            <div>
+                                <div style="font-size: 1.8rem; font-weight: bold; color: #F5B82A;">15K+</div>
+                                <p style="color: #666; font-size: 0.9rem;">Interactions</p>
+                            </div>
+                            <div>
+                                <div style="font-size: 1.8rem; font-weight: bold; color: #F5B82A;">850+</div>
+                                <p style="color: #666; font-size: 0.9rem;">Leads Generated</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background: #f5f5f5; display: flex; align-items: center; justify-content: center; padding: 20px;">
+                        <img src="img/caso1.png" alt="Performance Dashboard Results" style="width: 100%; height: auto; max-width: 100%; cursor: pointer;" class="caso-img" data-full="img/caso1.png">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case 2: B2B Service -->
+            <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); margin-bottom: 40px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; align-items: stretch;">
+                    <div style="background: #f5f5f5; display: flex; align-items: center; justify-content: center; padding: 20px;">
+                        <img src="img/caso2.png" alt="Scalable Growth" style="width: 100%; height: auto; max-width: 100%; cursor: pointer;" class="caso-img" data-full="img/caso2.png">
+                    </div>
+                    <div style="padding: 40px; display: flex; flex-direction: column; justify-content: center;">
+                        <p style="color: #666; font-size: 0.9rem; margin-bottom: 10px; text-transform: uppercase; font-weight: 600;">Client: B2B Service Provider | Service: Integrated Digital Strategy</p>
+                        <h3 style="margin-bottom: 10px;">Real Data. Scalable Growth.</h3>
+                        <p style="color: #666; margin-bottom: 20px;">📍 Miami, FL | 📅 6 Months | 💰 ROI: 350%</p>
+                        <h4>The Challenge</h4>
+                        <p style="margin-bottom: 15px;">A B2B service provider struggled to consistently generate qualified leads and measure the true ROI of their marketing efforts.</p>
+                        <h4>Our Strategy</h4>
+                        <ul style="list-style: none; margin-bottom: 15px;">
+                            <li style="margin-bottom: 8px; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);"><i class="fas fa-check" style="color: #F5B82A; margin-right: 8px; transition: all 0.3s ease;"></i>Comprehensive strategy where content, ads, and local SEO worked together</li>
+                            <li style="margin-bottom: 8px; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);"><i class="fas fa-check" style="color: #F5B82A; margin-right: 8px; transition: all 0.3s ease;"></i>Single dashboard for complete results transparency</li>
+                            <li style="transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);"><i class="fas fa-check" style="color: #F5B82A; margin-right: 8px; transition: all 0.3s ease;"></i>Automated tracking of all customer interactions</li>
+                        </ul>
+                        <h4>Results</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-top: 20px;">
+                            <div>
+                                <div style="font-size: 1.8rem; font-weight: bold; color: #101d3b;">713K+</div>
+                                <p style="color: #666; font-size: 0.9rem;">Impressions in 6 months</p>
+                            </div>
+                            <div>
+                                <div style="font-size: 1.8rem; font-weight: bold; color: #101d3b;">21.7K+</div>
+                                <p style="color: #666; font-size: 0.9rem;">Interactions</p>
+                            </div>
+                            <div>
+                                <div style="font-size: 1.8rem; font-weight: bold; color: #101d3b;">1,700+</div>
+                                <p style="color: #666; font-size: 0.9rem;">Qualified Leads</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case 3: Technology -->
+            <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); margin-bottom: 40px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; align-items: stretch;">
+                    <div style="padding: 40px; display: flex; flex-direction: column; justify-content: center;">
+                        <p style="color: #666; font-size: 0.9rem; margin-bottom: 10px; text-transform: uppercase; font-weight: 600;">Client: Technology Company | Service: Full-Funnel Marketing</p>
+                        <h3 style="margin-bottom: 10px;">Data-Driven Growth at Scale</h3>
+                        <p style="color: #666; margin-bottom: 20px;">📍 Miami, FL | 📅 6 Months | 💰 ROI: 350%</p>
+                        <h4>The Challenge</h4>
+                        <p style="margin-bottom: 15px;">A technology company needed to accelerate growth and establish market leadership while maintaining a consistent flow of high-quality leads.</p>
+                        <h4>Our Strategy</h4>
+                        <ul style="list-style: none; margin-bottom: 15px;">
+                            <li style="margin-bottom: 8px; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);"><i class="fas fa-check" style="color: #F5B82A; margin-right: 8px; transition: all 0.3s ease;"></i>Unified strategy where paid ads, social media, Google Business, and local SEO worked together</li>
+                            <li style="margin-bottom: 8px; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);"><i class="fas fa-check" style="color: #F5B82A; margin-right: 8px; transition: all 0.3s ease;"></i>Cohesive plan with real-time tracking on performance dashboard</li>
+                            <li style="transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);"><i class="fas fa-check" style="color: #F5B82A; margin-right: 8px; transition: all 0.3s ease;"></i>Continuous conversion optimization across all channels</li>
+                        </ul>
+                        <h4>Results</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-top: 20px;">
+                            <div>
+                                <div style="font-size: 1.8rem; font-weight: bold; color: #101d3b;">1.5M+</div>
+                                <p style="color: #666; font-size: 0.9rem;">Impressions in 6 months</p>
+                            </div>
+                            <div>
+                                <div style="font-size: 1.8rem; font-weight: bold; color: #101d3b;">29K+</div>
+                                <p style="color: #666; font-size: 0.9rem;">User Actions</p>
+                            </div>
+                            <div>
+                                <div style="font-size: 1.8rem; font-weight: bold; color: #101d3b;">3,770+</div>
+                                <p style="color: #666; font-size: 0.9rem;">Qualified Leads</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background: #f5f5f5; display: flex; align-items: center; justify-content: center; padding: 20px;">
+                        <img src="img/caso3.png" alt="Local SEO Skin Clinic" style="width: 100%; height: auto; max-width: 100%; cursor: pointer;" class="caso-img" data-full="img/caso3.png">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case 4: Skin Clinic -->
+            <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); margin-bottom: 40px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; align-items: stretch;">
+                    <div style="background: #f5f5f5; display: flex; align-items: center; justify-content: center; padding: 20px;">
+                        <img src="img/caso4.png" alt="Local SEO Skin Clinic" style="width: 100%; height: auto; max-width: 100%; cursor: pointer;" class="caso-img" data-full="img/caso4.png">
+                    </div>
+                    <div style="padding: 40px; display: flex; flex-direction: column; justify-content: center;">
+                        <p style="color: #666; font-size: 0.9rem; margin-bottom: 10px; text-transform: uppercase; font-weight: 600;">Client: Skin Rejuvenation Clinic | Service: Local SEO</p>
+                        <h3 style="margin-bottom: 10px;">Local SEO That Actually Ranks</h3>
+                        <p style="color: #666; margin-bottom: 20px;">📍 Miami, FL | 📅 6 Months | 💰 ROI: 350%</p>
+                        <h4>The Challenge</h4>
+                        <p style="margin-bottom: 15px;">A specialized skin rejuvenation clinic was virtually invisible in local search results, losing customers with high purchase intent.</p>
+                        <h4>Our Strategy</h4>
+                        <ul style="list-style: none; margin-bottom: 15px;">
+                            <li style="margin-bottom: 8px; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);"><i class="fas fa-check" style="color: #F5B82A; margin-right: 8px; transition: all 0.3s ease;"></i>Targeted local SEO strategy focused on high-intent keywords</li>
+                            <li style="margin-bottom: 8px; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);"><i class="fas fa-check" style="color: #F5B82A; margin-right: 8px; transition: all 0.3s ease;"></i>Google Maps optimization for "skin rejuvenation therapy" and "skin care clinic"</li>
+                            <li style="transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);"><i class="fas fa-check" style="color: #F5B82A; margin-right: 8px; transition: all 0.3s ease;"></i>Local authority building and review management</li>
+                        </ul>
+                        <h4>Results</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-top: 20px;">
+                            <div>
+                                <div style="font-size: 1.8rem; font-weight: bold; color: #F5B82A;">Top 3</div>
+                                <p style="color: #666; font-size: 0.9rem;">Google Maps Rankings</p>
+                            </div>
+                            <div>
+                                <div style="font-size: 1.8rem; font-weight: bold; color: #F5B82A;">100%</div>
+                                <p style="color: #666; font-size: 0.9rem;">High-Intent Keywords</p>
+                            </div>
+                            <div>
+                                <div style="font-size: 1.8rem; font-weight: bold; color: #F5B82A;">0%</div>
+                                <p style="color: #666; font-size: 0.9rem;">Paid Ads Required</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case 5: Italian Restaurant -->
+            <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); margin-bottom: 40px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; align-items: stretch;">
+                    <div style="padding: 40px; display: flex; flex-direction: column; justify-content: center;">
+                        <p style="color: #666; font-size: 0.9rem; margin-bottom: 10px; text-transform: uppercase; font-weight: 600;">Client: Italian Restaurant | Service: Local SEO</p>
+                        <h3 style="margin-bottom: 10px;">Local SEO That Fills Tables</h3>
+                        <p style="color: #666; margin-bottom: 20px;">📍 Miami, FL | 📅 6 Months | 💰 ROI: 350%</p>
+                        <h4>The Challenge</h4>
+                        <p style="margin-bottom: 15px;">An authentic Italian restaurant struggled to stand out in a competitive local market, with competitors dominating search results.</p>
+                        <h4>Our Strategy</h4>
+                        <ul style="list-style: none; margin-bottom: 15px;">
+                            <li style="margin-bottom: 8px; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);"><i class="fas fa-check" style="color: #F5B82A; margin-right: 8px; transition: all 0.3s ease;"></i>Google Business Profile optimization</li>
+                            <li style="margin-bottom: 8px; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);"><i class="fas fa-check" style="color: #F5B82A; margin-right: 8px; transition: all 0.3s ease;"></i>Local SEO strategy targeting menu and location searches</li>
+                            <li style="transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);"><i class="fas fa-check" style="color: #F5B82A; margin-right: 8px; transition: all 0.3s ease;"></i>Capturing customers actively searching for Italian food</li>
+                        </ul>
+                        <h4>Results</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-top: 20px;">
+                            <div>
+                                <div style="font-size: 1.8rem; font-weight: bold; color: #F5B82A;">#1-3</div>
+                                <p style="color: #666; font-size: 0.9rem;">Rankings for Main Keywords</p>
+                            </div>
+                            <div>
+                                <div style="font-size: 1.8rem; font-weight: bold; color: #F5B82A;">2X</div>
+                                <p style="color: #666; font-size: 0.9rem;">Menu + Location Visibility</p>
+                            </div>
+                            <div>
+                                <div style="font-size: 1.8rem; font-weight: bold; color: #F5B82A;">100%</div>
+                                <p style="color: #666; font-size: 0.9rem;">Increase in Walk-in Customers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background: #f5f5f5; display: flex; align-items: center; justify-content: center; padding: 20px;">
+                        <img src="img/caso5.png" alt="Local SEO Italian Restaurant" style="width: 100%; height: auto; max-width: 100%; cursor: pointer;" class="caso-img" data-full="img/caso5.png">
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #F0F4F8, white); padding: 50px; border-radius: 12px; text-align: center; margin-top: 60px;">
+                <h2>Want Similar Results For Your Business?</h2>
+                <p style="font-size: 1.1rem; margin: 20px 0; color: #666;">Every business is unique. But they all share one truth: exponential growth when they have the right strategy.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-final">
+        <div class="container">
+            <h2>Tell Us About Your Business</h2>
+            <p>We'll do a free audit and show you what's possible</p>
+            <div class="cta-buttons">
+                <a href="index.html#contacto" class="btn btn-lg btn-primary">Schedule Free Audit</a>
+                <a href="https://wa.me/17867556238" target="_blank" rel="noopener" class="btn btn-lg btn-secondary">WhatsApp <i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Modal for image enlargement -->
+    <div id="imageModal" style="display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); animation: fadeIn 0.3s ease-out;">
+        <div style="position: relative; margin: auto; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
+            <span style="position: absolute; top: 20px; right: 30px; color: #f1f1f1; font-size: 40px; font-weight: bold; cursor: pointer; z-index: 10000;" id="closeModal">&times;</span>
+            <img id="modalImg" src="" alt="Enlarged image" style="max-width: 90%; max-height: 90%; object-fit: contain; animation: zoomIn 0.4s ease-out;">
+        </div>
+    </div>
+
+    <script src="js/components.js?v=2026.04.04.1245" defer></script>
+    <script src="js/script.js?v=2026.04.04.1245" defer></script>
+<script>
+        // Particle background for hero section
+        document.addEventListener('DOMContentLoaded', function() {
+            const canvas = document.getElementById('particlesCanvas');
+            if (canvas) {
+                const hero = canvas.parentElement;
+                canvas.width = hero.clientWidth;
+                canvas.height = hero.clientHeight;
+                
+                // Initialize particles if the function exists
+                if (typeof initParticles === 'function') {
+                    initParticles(canvas);
+                }
+                
+                // Resize canvas when window size changes
+                window.addEventListener('resize', function() {
+                    canvas.width = hero.clientWidth;
+                    canvas.height = hero.clientHeight;
+                });
+            }
+        });
+
+        // Add hover effects to li with animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // ============================================
+            // IMAGE MODAL
+            // ============================================
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImg');
+            const closeModal = document.getElementById('closeModal');
+            const casoImages = document.querySelectorAll('.caso-img');
+
+            casoImages.forEach(img => {
+                img.addEventListener('click', function() {
+                    modal.style.display = 'block';
+                    modalImg.src = this.getAttribute('data-full');
+                });
+            });
+
+            closeModal.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+
+            // Close modal with ESC key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    modal.style.display = 'none';
+                }
+            });
+
+            // ============================================
+            // HOVER EFFECTS ON LI
+            // ============================================
+            // Hover effect for li in strategy lists
+            const listItems = document.querySelectorAll('section.servicio-detalle li[style*="transition"]');
+            
+            listItems.forEach(li => {
+                li.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateX(8px)';
+                    this.style.color = 'var(--primary)';
+                    const icon = this.querySelector('i');
+                    if (icon) {
+                        icon.style.transform = 'scale(1.2) rotate(10deg)';
+                    }
+                });
+                
+                li.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateX(0)';
+                    this.style.color = '';
+                    const icon = this.querySelector('i');
+                    if (icon) {
+                        icon.style.transform = '';
+                    }
+                });
+            });
+
+            // ============================================
+            // SCROLL ANIMATIONS
+            // ============================================
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe success cases
+            document.querySelectorAll('section.servicio-detalle > div > div > div[style*="background: white"]').forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = `opacity 0.6s ease-out ${index * 0.1}s, transform 0.6s ease-out ${index * 0.1}s`;
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
+
+

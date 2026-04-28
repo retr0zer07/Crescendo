@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101d3b">
+    <title>Website Creation Questionnaire | Crescendo Digital Marketing</title>
+    <meta name="description" content="Complete this questionnaire to build your ideal website. We collect the visual, textual and functional details needed to make your site unique.">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/styles.css?v=2026.04.04.1245">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo base form */
+        .hero { position: relative; padding: 120px 20px 80px; text-align: center; color: white;	overflow: hidden;}
+        #particlesCanvas {position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 0;}
+        .hero-content {position: relative;z-index: 10;max-width: 800px;margin: 0 auto;}
+        .hero h1 {font-size: 3rem;font-weight: 700;margin-bottom: 20px;}
+        .hero p {font-size: 1.3rem;opacity: 0.9;}
+        .form-section {background: white; border-radius: 16px; padding: 40px 30px; margin: 40px auto; max-width: 900px; box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);}
+        .form-section h2 {color: #101d3b; font-size: 1.8rem; margin-bottom: 30px; text-align: center; position: relative; padding-bottom: 15px;}
+        .form-section h2::after {content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: linear-gradient(135deg, #F5B82A, #FFD700); border-radius: 2px;}
+        .form-group {margin-bottom: 25px;}
+        .form-group label {display: block; margin-bottom: 8px; font-weight: 600; color: #101d3b;}
+        .form-group input, .form-group textarea, .form-group select {width: 100%; padding: 14px 16px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit; font-size: 1rem; transition: border 0.3s ease;}
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus {outline: none; border-color: #F5B82A; box-shadow: 0 0 0 3px rgba(245, 184, 42, 0.15);}
+        .form-group textarea {min-height: 100px; resize: vertical;}
+        .file-upload {position: relative;display: inline-block;width: 100%;}
+        .file-upload input[type="file"] {position: absolute;left: -9999px;}
+        .file-upload-label {display: block;padding: 14px 16px;background: #f8f9fa;border: 2px dashed #ccc;border-radius: 8px;text-align: center;cursor: pointer;transition: all 0.3s ease;}
+        .file-upload-label:hover {background: #f0f0f0; border-color: #F5B82A;}
+        .submit-cta {text-align: center;margin: 52px 0 40px;}
+        .btn-submit {background: linear-gradient(135deg, #F5B82A, #FFD700);color: #101d3b;padding: 18px 50px;font-size: 1.2rem;font-weight: 700;border: none;border-radius: 50px;cursor: pointer;transition: all 0.3s ease;box-shadow: 0 5px 20px rgba(245, 184, 42, 0.3);}
+        .btn-submit:hover {transform: translateY(-5px);box-shadow: 0 15px 30px rgba(245, 184, 42, 0.4);}
+        .standalone-lang-toggle {position: fixed;top: 20px;right: 20px;z-index: 1000;background: white;border-radius: 50px;padding: 8px;box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);display: flex;gap: 5px;}
+        .standalone-lang-btn {padding: 10px 20px;border: none;background: transparent;color: #666;font-weight: 600;cursor: pointer;border-radius: 50px;transition: all 0.3s ease;}
+        .standalone-lang-btn.active {background: linear-gradient(135deg, #F5B82A, #FFD700);color: #101d3b;}
+        .lang-content {display: none;}
+        .lang-content.active {display: block;}
+        /* Checkboxes Cards Mejorados */
+        .checkbox-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+        .checkbox-card {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: #f7f7fa;
+            border: 2px solid #e5e7eb;
+            border-radius: 14px;
+            padding: 10px 18px;
+            cursor: pointer;
+            font-weight: 600;
+            color: #101d3b;
+            box-shadow: 0 2px 12px rgba(245,184,42,0.07);
+            transition: all 0.26s cubic-bezier(0.4,0,0.2,1);
+            font-size: 1rem;
+            line-height: 1.26;
+            user-select: none;
+        }
+        .checkbox-card:hover,
+        .checkbox-card:focus-within {
+            background: #fffbe6;
+            border-color: #F5B82A;
+            box-shadow: 0 4px 18px rgba(245,184,42,0.09);
+        }
+        .checkbox-card input[type="checkbox"] {
+            accent-color: #F5B82A;
+            width: 22px;
+            height: 22px;
+            margin-right: 8px;
+            margin-left: 0;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        .checkbox-card .feature-icon {
+            font-size: 1.26em;
+            color: #FFD700;
+            margin-right: 2px;
+            min-width: 1.3em;
+            flex-shrink: 0;
+            transition: color 0.25s;
+        }
+        .checkbox-card input[type="checkbox"]:checked + .feature-icon {
+            color: #F5B82A;
+        }
+        .checkbox-card span:last-child {
+            flex: 1;
+            color: #101d3b;
+            transition: color 0.23s;
+        }
+        .checkbox-card input[type="checkbox"]:checked ~ .feature-icon ~ span {
+            color: #F5B82A;
+        }
+        @media (max-width: 900px) {
+            .checkbox-grid {grid-template-columns: 1fr;}
+            .hero h1 {font-size: 2.2rem;}
+            .form-section {padding: 30px 10px; margin: 20px auto;}
+        }
+    </style>
+<!-- TikTok Pixel (deferred) -->
+<script>
+(function (w, d) {
+    var loaded = false;
+    var ttq = w.ttq = w.ttq || [];
+    ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie", "holdConsent", "revokeConsent", "grantConsent"];
+    ttq.setAndDefer = function (obj, method) {
+        obj[method] = function () {
+            obj.push([method].concat([].slice.call(arguments, 0)));
+        };
+    };
+
+    for (var i = 0; i < ttq.methods.length; i++) {
+        ttq.setAndDefer(ttq, ttq.methods[i]);
+    }
+
+    function loadTikTok() {
+        if (loaded) return;
+        loaded = true;
+        var s = d.createElement('script');
+        s.async = true;
+        s.src = 'https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=D6RIACBC77UA8MCFBND0&lib=ttq';
+        d.head.appendChild(s);
+        ttq.page();
+    }
+
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (evt) {
+        w.addEventListener(evt, loadTikTok, { once: true, passive: true });
+    });
+
+    w.addEventListener('load', function () {
+        setTimeout(loadTikTok, 12000);
+    }, { once: true });
+})(window, document);
+</script>
+    <script src="js/components.js?v=2026.04.04.1245" defer></script>
+</head>
+<body>
+    <!-- Toggle de idioma -->
+    <div class="standalone-lang-toggle">
+        <button class="standalone-lang-btn" data-lang="es">ES</button>
+        <button class="standalone-lang-btn active" data-lang="en">EN</button>
+    </div>
+
+    <!-- Español -->
+    <div class="lang-content" id="content-es">
+        <section class="hero">
+            <canvas id="particlesCanvas"></canvas>
+            <div class="hero-content">
+                <h1>Formulario para Creación de Sitio Web</h1>
+                <p>Queremos ayudarte a crear una página web única y efectiva.<br>
+                    Completa este cuestionario para compartir tus preferencias visuales, estructura de contenido y funcionalidades deseadas para tu sitio web.</p>
+            </div>
+        </section>
+        <div class="container">
+            <form action="process_formweb.php" method="POST" enctype="multipart/form-data">
+                <!-- Información General -->
+                <div class="form-section">
+                    <h2>Información General</h2>
+                    <div class="form-group"><label>Nombre de la empresa o proyecto *</label><input type="text" name="nombre_empresa" required></div>
+                    <div class="form-group"><label>Persona de contacto *</label><input type="text" name="contacto_nombre" required></div>
+                    <div class="form-group"><label>Email de contacto *</label><input type="email" name="email_contacto" required></div>
+                    <div class="form-group"><label>Teléfono</label><input type="tel" name="telefono_contacto"></div>
+                </div>
+                <!-- Objetivo del sitio web -->
+                <div class="form-section">
+                    <h2>Objetivo del Sitio Web</h2>
+                    <div class="form-group"><label>¿Cuál es el objetivo principal de la web? *</label><textarea name="objetivo_web" placeholder="Ejemplo: Vender productos, captar leads, mostrar portafolio, informar..." required></textarea></div>
+                    <div class="form-group"><label>Descripción breve del negocio o actividad *</label><textarea name="descripcion_negocio" required></textarea></div>
+                </div>
+                <!-- Estructura y Páginas -->
+                <div class="form-section">
+                    <h2>Estructura y Navegación</h2>
+                    <div class="form-group"><label>Páginas/secciones requeridas *</label><textarea name="paginas_requeridas" placeholder="Ejemplo: Inicio, Sobre nosotros, Servicios, Blog, Contacto, Tienda..." required></textarea></div>
+                    <div class="form-group"><label>¿Secciones especiales o contenido adicional?</label><textarea name="secciones_especiales" placeholder="Ejemplo: FAQs, testimonios, formulario personalizado"></textarea></div>
+                </div>
+                <!-- Identidad Visual -->
+                <div class="form-section">
+                    <h2>Identidad Visual</h2>
+                    <div class="form-group"><label>Colores y estilos preferidos *</label><textarea name="colores_estilo" placeholder="Ejemplo: Azul y dorado, moderno, minimalista, elegante..." required></textarea></div>
+                    <div class="form-group"><label>Tipografías o fuentes preferidas</label><input type="text" name="tipografias" placeholder="Ejemplo: Poppins, Montserrat, Arial..."></div>
+                    <div class="form-group"><label>¿Tienes logotipo? Adjunta aquí</label>
+                        <div class="file-upload">
+                            <input type="file" name="logo_file" id="logo_file_es" accept="image/*">
+                            <label for="logo_file_es" class="file-upload-label">Click para subir tu logotipo (PNG, JPG, SVG)</label>
+                        </div>
+                    </div>
+                    <div class="form-group"><label>Adjunta imágenes de referencia/inspiración</label>
+                        <div class="file-upload">
+                            <input type="file" name="imagenes_referencia[]" id="imagenes_referencia_es" accept="image/*" multiple>
+                            <label for="imagenes_referencia_es" class="file-upload-label">Click para subir imágenes</label>
+                        </div>
+                    </div>
+                    <div class="form-group"><label>Links a webs de referencia/inspiración</label><textarea name="webs_referencia" placeholder="Coloca URLs de sitios que te gustan o inspiran"></textarea></div>
+                </div>
+                <!-- Contenidos e información -->
+                <div class="form-section">
+                    <h2>Contenidos</h2>
+                    <div class="form-group"><label>Textos principales del sitio (puedes escribir aquí o adjuntar archivos)</label><textarea name="textos_principales"></textarea></div>
+                    <div class="form-group"><label>Adjunta documentos con textos o imágenes</label>
+                        <div class="file-upload">
+                            <input type="file" name="archivos_contenido[]" id="archivos_contenido_es" accept="image/*,.pdf,.doc,.docx,.txt" multiple>
+                            <label for="archivos_contenido_es" class="file-upload-label">Click para adjuntar archivos</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Funcionalidades Adicionales -->
+                <div class="form-section">
+                    <h2>Funcionalidades Específicas</h2>
+                    <div class="form-group">
+                        <label>¿Requiere alguna funcionalidad especial? (selecciona todas las que aplican)</label>
+                        <div class="checkbox-grid">
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="funcionalidad_especial[]" value="blog">
+                                <span class="feature-icon"><i class="fa-solid fa-pen-nib"></i></span>
+                                <span>Blog</span>
+                            </label>
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="funcionalidad_especial[]" value="tienda_online">
+                                <span class="feature-icon"><i class="fa-solid fa-store"></i></span>
+                                <span>Tienda Online (e-commerce)</span>
+                            </label>
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="funcionalidad_especial[]" value="reserva_turnos">
+                                <span class="feature-icon"><i class="fa-solid fa-calendar-check"></i></span>
+                                <span>Reserva de Turnos/Citas</span>
+                            </label>
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="funcionalidad_especial[]" value="area_clientes">
+                                <span class="feature-icon"><i class="fa-solid fa-user-lock"></i></span>
+                                <span>Área privada para clientes</span>
+                            </label>
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="funcionalidad_especial[]" value="multilenguaje">
+                                <span class="feature-icon"><i class="fa-solid fa-language"></i></span>
+                                <span>Sitio web multilenguaje</span>
+                            </label>
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="funcionalidad_especial[]" value="galeria_img">
+                                <span class="feature-icon"><i class="fa-regular fa-images"></i></span>
+                                <span>Galería de imágenes</span>
+                            </label>
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="funcionalidad_especial[]" value="integracion_redes">
+                                <span class="feature-icon"><i class="fa-brands fa-facebook-messenger"></i></span>
+                                <span>Integración con redes sociales</span>
+                            </label>
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="funcionalidad_especial[]" value="formulario_avanzado">
+                                <span class="feature-icon"><i class="fa-solid fa-file-signature"></i></span>
+                                <span>Formularios avanzados</span>
+                            </label>
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="funcionalidad_especial[]" value="mapa">
+                                <span class="feature-icon"><i class="fa-solid fa-map-location-dot"></i></span>
+                                <span>Mapa interactivo</span>
+                            </label>
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="funcionalidad_especial[]" value="otras">
+                                <span class="feature-icon"><i class="fa-regular fa-lightbulb"></i></span>
+                                <span>Otras (especificar en comentarios)</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group"><label>Comentarios sobre funcionalidades</label><textarea name="comentarios_funcionalidades" placeholder="Especifica detalles extras de las funcionalidades especiales"></textarea></div>
+                </div>
+                <!-- Inspiraciones -->
+                <div class="form-section">
+                    <h2>Inspiración & Preferencias</h2>
+                    <div class="form-group"><label>¿Qué emoción/sensación quieres transmitir con la web?</label><textarea name="emocion_web" placeholder="Ejemplo: confianza, innovación, alegría, seriedad..."></textarea></div>
+                </div>
+                <!-- Contacto/Entrega -->
+                <div class="form-section">
+                    <h2>Entrega & Observaciones</h2>
+                    <div class="form-group"><label>¿Fecha límite deseada de entrega?</label><input type="date" name="fecha_entrega"></div>
+                    <div class="form-group"><label>Comentarios adicionales</label><textarea name="comentarios_adicionales" placeholder="Cualquier información extra que consideres importante..."></textarea></div>
+                </div>
+                <input type="hidden" name="lang" value="es">
+                <div class="submit-cta">
+                    <button type="submit" class="btn-submit">Enviar Cuestionario Web</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Inglés -->
+    <div class="lang-content active" id="content-en">
+        <section class="hero">
+            <canvas id="particlesCanvas"></canvas>
+            <div class="hero-content">
+                <h1>Website Creation Questionnaire</h1>
+                <p>We want to help you build a unique, effective website.<br>
+                Please complete this form to share your visual preferences, content structure, and desired features for your site.</p>
+            </div>
+        </section>
+        <div class="container">
+            <form action="process_formweb.php" method="POST" enctype="multipart/form-data" accept-charset="UTF-8">
+                <!-- General Info -->
+                <div class="form-section">
+                    <h2>General Information</h2>
+                    <div class="form-group"><label>Business/Project Name *</label><input type="text" name="nombre_empresa" required></div>
+                    <div class="form-group"><label>Contact Person *</label><input type="text" name="contacto_nombre" required></div>
+                    <div class="form-group"><label>Contact Email *</label><input type="email" name="email_contacto" required></div>
+                    <div class="form-group"><label>Phone</label><input type="tel" name="telefono_contacto"></div>
+                </div>
+                <!-- Site Goals -->
+                <div class="form-section">
+                    <h2>Website Goals</h2>
+                    <div class="form-group"><label>What is the main goal of your website? *</label><textarea name="objetivo_web" placeholder="E.g.: Sell products, generate leads, showcase portfolio, inform..." required></textarea></div>
+                    <div class="form-group"><label>Brief description of your business or activity *</label><textarea name="descripcion_negocio" required></textarea></div>
+                </div>
+                <!-- Structure & Pages -->
+                <div class="form-section">
+                    <h2>Structure & Navigation</h2>
+                    <div class="form-group"><label>Required pages/sections *</label><textarea name="paginas_requeridas" placeholder="E.g.: Home, About Us, Services, Blog, Contact, Shop..." required></textarea></div>
+                    <div class="form-group"><label>Special sections or additional content?</label><textarea name="secciones_especiales" placeholder="E.g.: FAQ, testimonials, custom form"></textarea></div>
+                </div>
+                <!-- Visual Identity -->
+                <div class="form-section">
+                    <h2>Visual Identity</h2>
+                    <div class="form-group"><label>Preferred colors & style *</label><textarea name="colores_estilo" placeholder="E.g.: Blue and gold, modern, minimalist, elegant..." required></textarea></div>
+                    <div class="form-group"><label>Preferred fonts or typefaces</label><input type="text" name="tipografias" placeholder="E.g.: Poppins, Montserrat, Arial..."></div>
+                    <div class="form-group"><label>Do you have a logo? Upload it here</label>
+                        <div class="file-upload">
+                            <input type="file" name="logo_file" id="logo_file_en" accept="image/*">
+                            <label for="logo_file_en" class="file-upload-label">Click to upload your logo (PNG, JPG, SVG)</label>
+                        </div>
+                    </div>
+                    <div class="form-group"><label>Upload reference/inspiration images</label>
+                        <div class="file-upload">
+                            <input type="file" name="imagenes_referencia[]" id="imagenes_referencia_en" accept="image/*" multiple>
+                            <label for="imagenes_referencia_en" class="file-upload-label">Click to upload reference images</label>
+                        </div>
+                    </div>
+                    <div class="form-group"><label>Links to reference/inspiration websites</label><textarea name="webs_referencia" placeholder="List URLs of sites you like or that inspire you"></textarea></div>
+                </div>
+                <!-- Content -->
+                <div class="form-section">
+                    <h2>Content</h2>
+                    <div class="form-group"><label>Main website texts (write here or upload files)</label><textarea name="textos_principales"></textarea></div>
+                    <div class="form-group"><label>Upload documents with text or images</label>
+                        <div class="file-upload">
+                            <input type="file" name="archivos_contenido[]" id="archivos_contenido_en" accept="image/*,.pdf,.doc,.docx,.txt" multiple>
+                            <label for="archivos_contenido_en" class="file-upload-label">Click to upload files</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Features -->
+                <div class="form-section">
+                    <h2>Special Features</h2>
+                    <div class="form-group">
+                        <label>Do you need any special features? (select all that apply)</label>
+                        <div class="checkbox-grid">
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="funcionalidad_especial[]" value="blog">
+                                <span class="feature-icon"><i class="fa-solid fa-pen-nib"></i></span>
+                                <span>Blog</span>
+                            </label>
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="funcionalidad_especial[]" value="tienda_online">
+                                <span class="feature-icon"><i class="fa-solid fa-store"></i></span>
+                                <span>Online Shop (e-commerce)</span>
+                            </label>
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="funcionalidad_especial[]" value="reserva_turnos">
+                                <span class="feature-icon"><i class="fa-solid fa-calendar-check"></i></span>
+                                <span>Bookings/Appointment Scheduling</span>
+                            </label>
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="funcionalidad_especial[]" value="area_clientes">
+                                <span class="feature-icon"><i class="fa-solid fa-user-lock"></i></span>
+                                <span>Client private area</span>
+                            </label>
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="funcionalidad_especial[]" value="multilenguaje">
+                                <span class="feature-icon"><i class="fa-solid fa-language"></i></span>
+                                <span>Multilanguage website</span>
+                            </label>
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="funcionalidad_especial[]" value="galeria_img">
+                                <span class="feature-icon"><i class="fa-regular fa-images"></i></span>
+                                <span>Image gallery</span>
+                            </label>
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="funcionalidad_especial[]" value="integracion_redes">
+                                <span class="feature-icon"><i class="fa-brands fa-facebook-messenger"></i></span>
+                                <span>Social media integration</span>
+                            </label>
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="funcionalidad_especial[]" value="formulario_avanzado">
+                                <span class="feature-icon"><i class="fa-solid fa-file-signature"></i></span>
+                                <span>Advanced forms</span>
+                            </label>
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="funcionalidad_especial[]" value="mapa">
+                                <span class="feature-icon"><i class="fa-solid fa-map-location-dot"></i></span>
+                                <span>Interactive map</span>
+                            </label>
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="funcionalidad_especial[]" value="otras">
+                                <span class="feature-icon"><i class="fa-regular fa-lightbulb"></i></span>
+                                <span>Other (specify in comments)</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group"><label>Comments about features</label><textarea name="comentarios_funcionalidades" placeholder="Specify extra details about special features"></textarea></div>
+                </div>
+                <!-- Inspirations -->
+                <div class="form-section">
+                    <h2>Inspiration & Preferences</h2>
+                    <div class="form-group"><label>What feeling/emotion do you want your website to transmit?</label><textarea name="emocion_web" placeholder="E.g.: trust, innovation, joy, seriousness..."></textarea></div>
+                </div>
+                <!-- Delivery & Notes -->
+                <div class="form-section">
+                    <h2>Delivery & Other Notes</h2>
+                    <div class="form-group"><label>Desired deadline?</label><input type="date" name="fecha_entrega"></div>
+                    <div class="form-group"><label>Additional comments</label><textarea name="comentarios_adicionales" placeholder="Any extra details you consider important..."></textarea></div>
+                </div>
+                <input type="hidden" name="lang" value="en">
+                <div class="submit-cta">
+                    <button type="submit" class="btn-submit">Send Website Questionnaire</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <div class="footer-bottom-content" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 20px; padding: 30px 0;">
+                    <img src="img/logo.png" alt="Crescendo Digital Marketing" style="height: 50px; width: auto;" loading="lazy">
+                    <p style="margin: 0;">&copy; 2026 Crescendo Digital Marketing Agency. <span class="footer-rights">All rights reserved.</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js?v=2026.04.04.1245" defer></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Canvas de partículas
+        const canvas = document.getElementById('particlesCanvas');
+        if (canvas && typeof initParticles === 'function') {
+            const hero = canvas.parentElement;
+            canvas.width = hero.clientWidth;
+            canvas.height = hero.clientHeight;
+            initParticles(canvas);
+        }
+        window.addEventListener('resize', function() {
+            if (canvas) {
+                canvas.width = hero.clientWidth;
+                canvas.height = hero.clientHeight;
+            }
+        });
+        // Idioma
+        const langButtons = document.querySelectorAll('.standalone-lang-btn');
+        const contentEs = document.getElementById('content-es');
+        const contentEn = document.getElementById('content-en');
+        const footerRights = document.querySelector('.footer-rights');
+        const getPreferredLang = () => localStorage.getItem('preferredLanguage') === 'es' ? 'es' : 'en';
+
+        function applyStandaloneLanguage(lang, persist = true) {
+            langButtons.forEach(button => {
+                button.classList.toggle('active', button.dataset.lang === lang);
+            });
+
+            if (lang === 'es') {
+                contentEs.classList.add('active');
+                contentEn.classList.remove('active');
+                document.documentElement.lang = 'es';
+                if (footerRights) footerRights.textContent = 'Todos los derechos reservados.';
+            } else {
+                contentEs.classList.remove('active');
+                contentEn.classList.add('active');
+                document.documentElement.lang = 'en';
+                if (footerRights) footerRights.textContent = 'All rights reserved.';
+            }
+
+            document.querySelectorAll('input[name="lang"]').forEach(input => {
+                input.value = lang;
+            });
+
+            if (persist) {
+                localStorage.setItem('preferredLanguage', lang);
+            }
+            
+            if (typeof normalizeDocumentSpanishTypography === 'function') {
+                requestAnimationFrame(() => {
+                    normalizeDocumentSpanishTypography(lang);
+                });
+            }
+        }
+
+        applyStandaloneLanguage(getPreferredLang(), false);
+
+        langButtons.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const lang = this.dataset.lang;
+                applyStandaloneLanguage(lang, true);
+            });
+        });
+    });
+    </script>
+</body>
+</html>
+
+

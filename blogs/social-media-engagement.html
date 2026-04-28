@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo Subir el Engagement en Redes | Crescendo Digital</title>
+    <meta name="description" content="Acciones prácticas para aumentar engagement auténtico en redes sociales.">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/styles.css?v=2026.04.04.1245">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- TikTok Pixel (deferred) -->
+<script>
+(function (w, d) {
+    var loaded = false;
+    var ttq = w.ttq = w.ttq || [];
+    ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie", "holdConsent", "revokeConsent", "grantConsent"];
+    ttq.setAndDefer = function (obj, method) {
+        obj[method] = function () {
+            obj.push([method].concat([].slice.call(arguments, 0)));
+        };
+    };
+
+    for (var i = 0; i < ttq.methods.length; i++) {
+        ttq.setAndDefer(ttq, ttq.methods[i]);
+    }
+
+    function loadTikTok() {
+        if (loaded) return;
+        loaded = true;
+        var s = d.createElement('script');
+        s.async = true;
+        s.src = 'https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=D6RIACBC77UA8MCFBND0&lib=ttq';
+        d.head.appendChild(s);
+        ttq.page();
+    }
+
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (evt) {
+        w.addEventListener(evt, loadTikTok, { once: true, passive: true });
+    });
+
+    w.addEventListener('load', function () {
+        setTimeout(loadTikTok, 12000);
+    }, { once: true });
+})(window, document);
+</script>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <section class="hero">
+        <div class="hero-content">
+            <div style="color: #8B3DFF; font-size: 0.9rem; font-weight: 600; margin-bottom: 15px; text-transform: uppercase;">Social Media</div>
+            <h1>Cómo Subir el Engagement en Redes</h1>
+            <p>Conversaciones reales, no métricas de vanidad</p>
+        </div>
+    </section>
+    <section class="servicio-detalle" style="margin-top: 60px;">
+        <div class="container">
+            <div class="servicio-detalle-text" style="max-width: 900px; margin: 0 auto;">
+                <p>El engagement nace de contenido útil y participación activa.</p>
+                <h2>Movidas clave</h2>
+                <ul>
+                    <li>Preguntas y encuestas en stories</li>
+                    <li>Lives con expertos y clientes</li>
+                    <li>Respuestas rápidas y con personalidad</li>
+                </ul>
+                <h2>Optimiza cada publicación</h2>
+                <ol>
+                    <li>Hook fuerte en los 3 primeros segundos</li>
+                    <li>CTA a comentar/guardar/compartir</li>
+                    <li>Publica cuando tu audiencia está activa</li>
+                </ol>
+                <div style="background: linear-gradient(135deg, #8B3DFF, #A05BFF); color: white; padding: 30px; border-radius: 12px; margin: 40px 0;">
+                    <h3 style="margin-top: 0; color: white;">⚡ Consejo</h3>
+                    <p style="margin-bottom: 0; color: white;">La rapidez de respuesta multiplica el engagement; asigna un dueño diario.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta-final">
+        <div class="container">
+            <h2>¿Quieres una comunidad activa?</h2>
+            <p>Diseñamos contenido y rutinas de interacción</p>
+            <div class="cta-buttons">
+                <a href="../index.html#contacto" class="btn btn-lg btn-primary">Auditoría Gratuita</a>
+                <a href="https://wa.me/17867556238" target="_blank" rel="noopener" class="btn btn-lg btn-secondary">WhatsApp <i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+    <div id="footer-placeholder"></div>
+    <script src="../js/components.js?v=2026.04.04.1245" defer></script>
+    <script src="../js/script.js?v=2026.04.04.1245" defer></script>
+</body>
+</html>
+
+

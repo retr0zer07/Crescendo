@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101d3b">
+    <title>Digital Marketing Plans | Crescendo Digital Marketing</title>
+    <meta name="description" content="Scalable digital marketing plans designed to grow your business, from startups to established companies.">
+    
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/styles.css?v=2026.04.04.1245">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Hero with particles */
+        .hero {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        #particlesCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Pricing specific styles */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+        
+        .pricing-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px 30px;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border-top: 4px solid transparent;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pricing-card.ultra-basico {
+            border-top-color: #2f9e44;
+            background: linear-gradient(to bottom, rgba(47, 158, 68, 0.04), white);
+            order: -1;
+        }
+
+        .pricing-card.ultra-basico .pricing-price {
+            background: linear-gradient(135deg, #2f9e44, #37b24d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .pricing-card:nth-child(1) {
+            border-top-color: #FF6B35;
+        }
+        
+        .pricing-card:nth-child(1) .pricing-price {
+            background: linear-gradient(135deg, #FF6B35, #FF8A60);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .pricing-card:nth-child(2) {
+            border-top-color: #F5B82A;
+            background: linear-gradient(to bottom, rgba(245, 184, 42, 0.03), white);
+        }
+        
+        .pricing-card:nth-child(3) {
+            border-top-color: #1B8A8A;
+        }
+        
+        .pricing-card:nth-child(3) .pricing-price {
+            background: linear-gradient(135deg, #1B8A8A, #228B95);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .pricing-card:nth-child(4) {
+            border-top-color: #101d3b;
+        }
+        
+        .pricing-card:nth-child(4) .pricing-price {
+            background: linear-gradient(135deg, #101d3b, #2a3f6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .pricing-card:nth-child(1):hover {
+            box-shadow: 0 15px 40px rgba(255, 107, 53, 0.25);
+        }
+        
+        .pricing-card:nth-child(2):hover {
+            box-shadow: 0 15px 40px rgba(245, 184, 42, 0.35);
+        }
+        
+        .pricing-card:nth-child(3):hover {
+            box-shadow: 0 15px 40px rgba(27, 138, 138, 0.25);
+        }
+        
+        .pricing-card:nth-child(4):hover {
+            box-shadow: 0 15px 40px rgba(16, 29, 59, 0.35);
+        }
+
+        .pricing-card.ultra-basico:hover {
+            box-shadow: 0 15px 40px rgba(47, 158, 68, 0.25);
+        }
+        
+        .pricing-card.popular {
+            border: 3px solid #F5B82A;
+        }
+        
+        .pricing-card.popular::before {
+            content: 'POPULAR';
+            position: absolute;
+            top: 20px;
+            right: -35px;
+            background: #F5B82A;
+            color: #101d3b;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+            font-weight: 700;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+        }
+        
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .pricing-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #101d3b;
+            margin-bottom: 10px;
+        }
+        
+        .pricing-price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #F5B82A;
+            margin-bottom: 5px;
+        }
+        
+        .pricing-price span {
+            font-size: 1.2rem;
+            color: #666;
+            font-weight: 400;
+        }
+        
+        .pricing-description {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-top: 15px;
+        }
+        
+        .pricing-features {
+            list-style: none;
+            margin: 30px 0;
+            flex: 1;
+        }
+        
+        .pricing-features li {
+            padding: 12px 0;
+            color: #333;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            opacity: 0;
+            transform: translateX(-20px);
+            animation: slideInLeft 0.5s ease forwards;
+        }
+        
+        @keyframes slideInLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .pricing-features li:nth-child(1) { animation-delay: 0.1s; }
+        .pricing-features li:nth-child(2) { animation-delay: 0.15s; }
+        .pricing-features li:nth-child(3) { animation-delay: 0.2s; }
+        .pricing-features li:nth-child(4) { animation-delay: 0.25s; }
+        .pricing-features li:nth-child(5) { animation-delay: 0.3s; }
+        .pricing-features li:nth-child(6) { animation-delay: 0.35s; }
+        .pricing-features li:nth-child(7) { animation-delay: 0.4s; }
+        .pricing-features li:nth-child(8) { animation-delay: 0.45s; }
+        .pricing-features li:nth-child(9) { animation-delay: 0.5s; }
+        .pricing-features li:nth-child(10) { animation-delay: 0.55s; }
+        
+        .pricing-card:hover .pricing-features li {
+            transform: translateX(5px);
+            transition: transform 0.3s ease;
+        }
+        
+        .pricing-features li i {
+            margin-top: 3px;
+            font-size: 1.1rem;
+        }
+        
+        .pricing-card:nth-child(1) .pricing-features li i {
+            color: #FF6B35;
+        }
+        
+        .pricing-card:nth-child(2) .pricing-features li i {
+            color: #F5B82A;
+        }
+        
+        .pricing-card:nth-child(3) .pricing-features li i {
+            color: #1B8A8A;
+        }
+        
+        .pricing-card:nth-child(4) .pricing-features li i {
+            color: #101d3b;
+        }
+
+        .pricing-card.ultra-basico .pricing-features li i {
+            color: #2f9e44;
+        }
+        
+        .pricing-cta {
+            width: 100%;
+            padding: 15px 30px;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            margin-top: auto;
+        }
+        
+        .pricing-card:nth-child(1) .pricing-cta {
+            background: linear-gradient(135deg, #FF6B35, #FF8A60);
+        }
+        
+        .pricing-card:nth-child(1) .pricing-cta:hover {
+            background: linear-gradient(135deg, #FF8A60, #FF6B35);
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(255, 107, 53, 0.4);
+        }
+        
+        .pricing-card:nth-child(2) .pricing-cta {
+            background: linear-gradient(135deg, #F5B82A, #FFD700);
+            color: #101d3b;
+        }
+        
+        .pricing-card:nth-child(2) .pricing-cta:hover {
+            background: linear-gradient(135deg, #FFD700, #F5B82A);
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(245, 184, 42, 0.4);
+        }
+        
+        .pricing-card:nth-child(3) .pricing-cta {
+            background: linear-gradient(135deg, #1B8A8A, #228B95);
+        }
+        
+        .pricing-card:nth-child(3) .pricing-cta:hover {
+            background: linear-gradient(135deg, #228B95, #1B8A8A);
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(27, 138, 138, 0.4);
+        }
+        
+        .pricing-card:nth-child(4) .pricing-cta {
+            background: linear-gradient(135deg, #101d3b, #2a3f6b);
+        }
+        
+        .pricing-card:nth-child(4) .pricing-cta:hover {
+            background: linear-gradient(135deg, #2a3f6b, #101d3b);
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(16, 29, 59, 0.4);
+        }
+
+        .pricing-card.ultra-basico .pricing-cta {
+            background: linear-gradient(135deg, #2f9e44, #37b24d);
+        }
+
+        .pricing-card.ultra-basico .pricing-cta:hover {
+            background: linear-gradient(135deg, #37b24d, #2f9e44);
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(47, 158, 68, 0.35);
+        }
+        
+        .features-comparison {
+            background: transparent;
+            border-radius: 16px;
+            padding: 50px 0;
+            margin: 80px 0;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .feature-item {
+            text-align: center;
+            background: white;
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(135deg, #F5B82A, #FFD700);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+        
+        .feature-item:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .feature-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .feature-item:nth-child(1) .feature-icon {
+            background: linear-gradient(135deg, #FF6B35, #FF8A60);
+        }
+        
+        .feature-item:nth-child(1)::before {
+            background: linear-gradient(135deg, #FF6B35, #FF8A60);
+        }
+        
+        .feature-item:nth-child(1):hover {
+            box-shadow: 0 15px 40px rgba(255, 107, 53, 0.2);
+        }
+        
+        .feature-item:nth-child(2) .feature-icon {
+            background: linear-gradient(135deg, #1B8A8A, #228B95);
+        }
+        
+        .feature-item:nth-child(2)::before {
+            background: linear-gradient(135deg, #1B8A8A, #228B95);
+        }
+        
+        .feature-item:nth-child(2):hover {
+            box-shadow: 0 15px 40px rgba(27, 138, 138, 0.2);
+        }
+        
+        .feature-item:nth-child(3) .feature-icon {
+            background: linear-gradient(135deg, #101d3b, #2a3f6b);
+        }
+        
+        .feature-item:nth-child(3)::before {
+            background: linear-gradient(135deg, #101d3b, #2a3f6b);
+        }
+        
+        .feature-item:nth-child(3):hover {
+            box-shadow: 0 15px 40px rgba(16, 29, 59, 0.2);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2rem;
+            color: white;
+            transition: all 0.4s ease;
+        }
+        
+        .feature-item:hover .feature-icon {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .feature-item h3 {
+            color: #101d3b;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .feature-item p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Video Testimonials in plans page */
+        .plans-videos-section {
+            padding: 30px 0 90px;
+            background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+        }
+
+        .plans-videos-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .plans-videos-header h2 {
+            margin-bottom: 12px;
+        }
+
+        .plans-videos-header p {
+            color: #64748b;
+            font-size: 1.08rem;
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        .plans-videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 26px;
+            justify-items: center;
+        }
+
+        .plans-video-card {
+            width: 100%;
+            max-width: 340px;
+            background: #fff;
+            border: 1px solid rgba(16, 29, 59, 0.08);
+            border-radius: 22px;
+            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .plans-video-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 44px rgba(15, 23, 42, 0.16);
+        }
+
+        .plans-video-frame {
+            background: #000;
+            aspect-ratio: 9 / 16;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .plans-video-frame video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+            background: #000;
+        }
+
+        .plans-video-meta {
+            padding: 16px 18px 18px;
+        }
+
+        .plans-video-meta h3 {
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+        }
+
+        .plans-video-meta p {
+            color: #64748b;
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+        
+        /* Language Toggle for standalone page */
+        .standalone-lang-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: white;
+            border-radius: 50px;
+            padding: 8px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+            display: flex;
+            gap: 5px;
+        }
+        
+        .standalone-lang-btn {
+            padding: 10px 20px;
+            border: none;
+            background: transparent;
+            color: #666;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .standalone-lang-btn.active {
+            background: linear-gradient(135deg, #F5B82A, #FFD700);
+            color: #101d3b;
+        }
+        
+        .standalone-lang-btn:hover {
+            background: #f0f0f0;
+        }
+        
+        .standalone-lang-btn.active:hover {
+            background: linear-gradient(135deg, #FFD700, #F5B82A);
+        }
+        
+        /* Content sections for language switching */
+        .lang-content {
+            display: none;
+        }
+        
+        .lang-content.active {
+            display: block;
+        }
+        
+        /* Hero spacing */
+        .hero ~ .servicio-detalle {
+            margin-top: 60px;
+        }
+        
+        @media (max-width: 768px) {
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .plans-videos-section {
+                padding: 20px 0 70px;
+            }
+            
+            .features-comparison {
+                padding: 30px 20px;
+            }
+            
+            .standalone-lang-toggle {
+                top: 10px;
+                right: 10px;
+            }
+        }
+    </style>
+<!-- TikTok Pixel (deferred) -->
+<script>
+(function (w, d) {
+    var loaded = false;
+    var ttq = w.ttq = w.ttq || [];
+    ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie", "holdConsent", "revokeConsent", "grantConsent"];
+    ttq.setAndDefer = function (obj, method) {
+        obj[method] = function () {
+            obj.push([method].concat([].slice.call(arguments, 0)));
+        };
+    };
+
+    for (var i = 0; i < ttq.methods.length; i++) {
+        ttq.setAndDefer(ttq, ttq.methods[i]);
+    }
+
+    function loadTikTok() {
+        if (loaded) return;
+        loaded = true;
+        var s = d.createElement('script');
+        s.async = true;
+        s.src = 'https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=D6RIACBC77UA8MCFBND0&lib=ttq';
+        d.head.appendChild(s);
+        ttq.page();
+    }
+
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (evt) {
+        w.addEventListener(evt, loadTikTok, { once: true, passive: true });
+    });
+
+    w.addEventListener('load', function () {
+        setTimeout(loadTikTok, 12000);
+    }, { once: true });
+})(window, document);
+</script>
+</head>
+<body>
+    <!-- Standalone Language Toggle -->
+    <div class="standalone-lang-toggle">
+        <button class="standalone-lang-btn" data-lang="es">ES</button>
+        <button class="standalone-lang-btn active" data-lang="en">EN</button>
+    </div>
+
+    <!-- Spanish Content -->
+    <div class="lang-content" id="content-es">
+        <!-- Hero Section -->
+        <section class="hero cta-final">
+            <canvas id="particlesCanvas"></canvas>
+            <div class="hero-content">
+                <h1>Planes de Marketing Digital</h1>
+                <p>Soluciones escalables diseñadas para impulsar tu negocio, desde startups hasta empresas establecidas</p>
+            </div>
+        </section>
+
+        <!-- Pricing Cards -->
+        <section class="servicio-detalle">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 20px;">Genera más clientes para tu negocio de forma constante</h2>
+                <p style="text-align: center; font-size: 1.1rem; color: #666; margin-bottom: 60px;">
+                    Sistemas de marketing diseñados para atraer más llamadas, más mensajes y más oportunidades reales cada mes.<br><br>Es hacer que tu negocio reciba más clientes mientras construimos una presencia sólida que te mantenga en el TOP 3 de tu industria, en tu zona.
+                </p>
+
+                <div class="pricing-grid">
+                    <!-- Plan 1: LOCAL START -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">LOCAL START</h3>
+                            <div class="pricing-price">$499<span>/mes</span></div>
+                            <p class="pricing-description">Ideal para negocios que quieren empezar a generar leads reales y construir una base sólida de clientes.</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check-circle"></i> <span>Resultados visibles desde el primer mes.</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Optimización completa para posicionar tu negocio en el TOP 3 de tu industria en Google Search y Google Maps</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Creación o rediseño del sitio web con enfoque en generación de leads</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Activación de visibilidad local para atraer clientes que buscan tus servicios</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Gestión básica de reputación online</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Presencia y corrección de información en directorios líderes: Google Business Profile, Bing Places, Yelp, Nextdoor, Apple Maps, Amazon Alexa, Facebook Business, Yellow Pages</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Hasta 5,000 visitas mensuales en Google y sitio web</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Reporte mensual con resultados y crecimiento</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Soporte prioritario 24/7 vía WhatsApp o email</span></li>
+                        </ul>
+                        <a href="https://wa.me/17867556238?text=Estoy%20interesado%20en%20el%20Plan%20LOCAL%20START" target="_blank" rel="noopener" class="pricing-cta">Seleccionar Plan</a>
+                    </div>
+
+                    <!-- Plan 2: BUSINESS GROWTH (POPULAR) -->
+                    <div class="pricing-card popular">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">BUSINESS GROWTH</h3>
+                            <div class="pricing-price">$599<span>/mes</span></div>
+                            <p class="pricing-description">Ideal para negocios que quieren recibir más leads, más rápido y de forma constante.</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check-circle"></i> <span>Resultados visibles desde el primer mes.</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Posicionamiento reforzado en el TOP 3 de tu industria en Google Search y Google Maps</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Creación o rediseño del sitio web optimizado para conversión</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Manejo profesional de Redes Sociales <strong>O</strong> Gestión de Anuncios en Meta Ads y Google Ads</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>12 publicaciones (posts) en redes sociales y 12 historias al mes</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Estrategia enfocada en generación de leads locales</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Gestión avanzada de reputación online</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Presencia y optimización en directorios líderes: Google Business Profile, Bing Places, Yelp, Nextdoor, Apple Maps, Amazon Alexa, Facebook Business, Yellow Pages</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Hasta 10,000 visitas mensuales en Google y sitio web</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Reportes mensuales enfocados en leads recibidos</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Soporte prioritario continuo</span></li>
+                        </ul>
+                        <a href="https://wa.me/17867556238?text=Estoy%20interesado%20en%20el%20Plan%20BUSINESS%20GROWTH" target="_blank" rel="noopener" class="pricing-cta">Seleccionar Plan</a>
+                    </div>
+
+                    <!-- Plan 3: SMART PERFORMANCE -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">SMART PERFORMANCE</h3>
+                            <div class="pricing-price">$699<span>/mes</span></div>
+                            <p class="pricing-description">Ideal para empresas que buscan un flujo estable de leads sin depender del día a día.</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check-circle"></i> <span>Resultados visibles desde el primer mes.</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Dominio estratégico del TOP 3 de tu industria para búsquedas clave</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Creación o rediseño del sitio web con estructura avanzada de conversión</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Gestión profesional de redes sociales</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Gestión optimizada de anuncios en Google Ads y Meta Ads</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>24 publicaciones en redes sociales y 24 historias al mes</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Sistema de generación constante de leads</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Automatización de respuestas 24/7</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Optimización continua para aumentar cantidad y calidad de leads</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Presencia y optimización en directorios líderes: Google Business Profile, Bing Places, Yelp, Nextdoor, Apple Maps, Amazon Alexa, Facebook Business, Yellow Pages</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Hasta 15,000 visitas mensuales en Google y sitio web</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Reporte mensual avanzado</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Sesión estratégica 1 a 1</span></li>
+                        </ul>
+                        <a href="https://wa.me/17867556238?text=Estoy%20interesado%20en%20el%20Plan%20SMART%20PERFORMANCE" target="_blank" rel="noopener" class="pricing-cta">Seleccionar Plan</a>
+                    </div>
+
+                    <!-- Plan 4: ELITE 360 -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">ELITE 360</h3>
+                            <div class="pricing-price">$999<span>/mes</span></div>
+                            <p class="pricing-description">Ideal para empresas que quieren escalar y convertirse en la opción principal de su mercado.</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check-circle"></i> <span>Primeros leads: Desde el primer mes con flujo constante.</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Dominio total del TOP 3 de tu industria en Google Search y Google Maps</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Creación o rediseño premium del sitio web con SEO avanzado</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Gestión automatizada de redes sociales</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Gestión avanzada de anuncios en Google Ads y Meta Ads</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>24 publicaciones en redes sociales y 24 historias al mes</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Sistema completo de adquisición de leads</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Automatización avanzada del seguimiento de interesados</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>SMS & Email Marketing para seguimiento de leads</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Gestión integral de presencia digital y reputación</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Activación multicanal para maximizar oportunidades</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Presencia y optimización en directorios líderes: Google Business Profile, Bing Places, Yelp, Nextdoor, Apple Maps, Amazon Alexa, Facebook Business, Yellow Pages</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Hasta 20,000 visitas mensuales en Google y sitio web</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Reportes 360° personalizados</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Consulta estratégica mensual 1 a 1</span></li>
+                        </ul>
+                        <a href="https://wa.me/17867556238?text=Estoy%20interesado%20en%20el%20Plan%20ELITE%20360" target="_blank" rel="noopener" class="pricing-cta">Seleccionar Plan</a>
+                    </div>
+
+                    <!-- Plan 5: ULTRA BASICO -->
+                    <div class="pricing-card ultra-basico">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">ULTRA BASICO</h3>
+                            <div class="pricing-price">$199<span>/mes</span></div>
+                            <p class="pricing-description">Ideal para negocios que están comenzando y necesitan presencia online rápida y económica.</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check-circle"></i> <span>Página web básica (1-3 páginas)</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Diseño simple y funcional (optimizado para móvil)</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>SEO básico (optimización inicial para Google)</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Optimización para aparecer en el Top #3 de Google (Google Search y Maps)</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Hosting incluido</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Mantenimiento técnico mensual</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Perfecto para negocios nuevos que quieren aparecer en internet y generar sus primeros clientes.</span></li>
+                        </ul>
+                        <a href="https://wa.me/17867556238?text=Estoy%20interesado%20en%20el%20Plan%20ULTRA%20BASICO" target="_blank" rel="noopener" class="pricing-cta">Seleccionar Plan</a>
+                    </div>
+                </div>
+                
+                <p style="text-align: center; color: #999; font-size: 0.85rem; margin-top: 40px; padding: 0 20px; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+                    <em>Los resultados pueden variar según la industria, ubicación y competencia. No garantizamos un número exacto de leads, sino la implementación de estrategias orientadas a generar oportunidades reales de negocio.</em>
+                </p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="servicio-detalle" style="background: #f8f9fa;">
+            <div class="container">
+                <div class="features-comparison">
+                    <h2 style="text-align: center; margin-bottom: 10px;">Alcanza Más Clientes y Haz Crecer Tu Negocio</h2>
+                    <p style="text-align: center; color: #666; font-size: 1.1rem; margin-bottom: 50px;">
+                        Nuestros planes de marketing digital están diseñados para negocios que buscan destacar en el mundo digital, aumentar su visibilidad y generar más ventas con estrategias comprobadas
+                    </p>
+
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Dashboard & CRM</h3>
+                            <p>Acceso 24/7 a métricas accionables y gestión de clientes en tiempo real</p>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3>Posicionamiento SEO</h3>
+                            <p>Aparece en los primeros resultados de búsqueda local y aumenta tu visibilidad</p>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Gestión de Reputación</h3>
+                            <p>Protege y mejora tu imagen digital con respuestas estratégicas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="plans-videos-section">
+            <div class="container">
+                <div class="plans-videos-header">
+                    <h2>Clientes Reales, Resultados Reales</h2>
+                    <p>Mira testimonios en video de clientes que confiaron en Crescendo para crecer su negocio con estrategias medibles.</p>
+                </div>
+
+                <div class="plans-videos-grid">
+                    <article class="plans-video-card">
+                        <div class="plans-video-frame">
+                            <video controls preload="metadata" src="videos/Eber%20Martini.mp4"></video>
+                        </div>
+                        <div class="plans-video-meta">
+                            <h3>Eber Martini</h3>
+                            <p>Experiencia directa con nuestro proceso de crecimiento digital.</p>
+                        </div>
+                    </article>
+
+                    <article class="plans-video-card">
+                        <div class="plans-video-frame">
+                            <video controls preload="metadata" src="videos/0316.mp4"></video>
+                        </div>
+                        <div class="plans-video-meta">
+                            <h3>Testimonio 0316</h3>
+                            <p>Otro caso real mostrando confianza y resultados con Crescendo.</p>
+                        </div>
+                    </article>
+
+                    <article class="plans-video-card">
+                        <div class="plans-video-frame">
+                            <video controls preload="metadata" src="videos/0313.mov"></video>
+                        </div>
+                        <div class="plans-video-meta">
+                            <h3>Testimonio 0313</h3>
+                            <p>Tercer testimonio real para reforzar confianza antes de elegir tu plan.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="cta-final">
+            <div class="container">
+                <h2>¿Listo Para Impulsar Tu Negocio?</h2>
+                <p>Contáctanos hoy y descubre cómo podemos ayudarte a alcanzar tus objetivos de marketing digital con estrategias personalizadas</p>
+                <div class="cta-buttons">
+                    <a href="tel:7867556238" class="btn btn-lg btn-primary">Llamar Ahora</a>
+                    <a href="https://wa.me/17867556238" target="_blank" rel="noopener" class="btn btn-lg btn-secondary">WhatsApp <i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- English Content -->
+    <div class="lang-content active" id="content-en">
+        <!-- Hero Section -->
+        <section class="hero cta-final">
+            <canvas id="particlesCanvas-en"></canvas>
+            <div class="hero-content">
+                <h1>Digital Marketing Plans</h1>
+                <p>Scalable solutions designed to boost your business, from startups to established companies</p>
+            </div>
+        </section>
+
+        <!-- Pricing Cards -->
+        <section class="servicio-detalle">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 20px;">Generate More Clients For Your Business Consistently</h2>
+                <p style="text-align: center; font-size: 1.1rem; color: #666; margin-bottom: 60px;">
+                    Marketing systems designed to attract more calls, more messages and more real opportunities every month.<br><br>It's about making your business receive more clients while we build a solid presence that keeps you in the TOP 3 of your industry, in your area.
+                </p>
+
+                <div class="pricing-grid">
+                    <!-- Plan 1: LOCAL START -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">LOCAL START</h3>
+                            <div class="pricing-price">$499<span>/month</span></div>
+                            <p class="pricing-description">Ideal for businesses that want to start generating real leads and build a solid customer base.</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check-circle"></i> <span>Results visible from the first month.</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Complete optimization to position your business in the TOP 3 of your industry on Google Search and Google Maps</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Website creation or redesign with focus on lead generation</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Activation of local visibility to attract customers looking for your services</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Basic online reputation management</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Presence and information correction in leading directories: Google Business Profile, Bing Places, Yelp, Nextdoor, Apple Maps, Amazon Alexa, Facebook Business, Yellow Pages</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Up to 5,000 monthly visits on Google and website</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>24 social media posts and 24 stories per month</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Monthly report with results and growth</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>24/7 Priority Support via WhatsApp or email</span></li>
+                        </ul>
+                        <a href="https://wa.me/17867556238?text=I'm%20interested%20in%20the%20LOCAL%20START%20Plan" target="_blank" rel="noopener" class="pricing-cta">Select Plan</a>
+                    </div>
+
+                    <!-- Plan 2: BUSINESS GROWTH (POPULAR) -->
+                    <div class="pricing-card popular">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">BUSINESS GROWTH</h3>
+                            <div class="pricing-price">$599<span>/month</span></div>
+                            <p class="pricing-description">Ideal for businesses that want to receive more leads, faster and consistently.</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check-circle"></i> <span>Results visible from the first month.</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Reinforced positioning in the TOP 3 of your industry on Google Search and Google Maps</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Website creation or redesign optimized for conversion</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Professional Social Media Management <strong>OR</strong> Ad Management on Meta Ads and Google Ads</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>12 social media posts and 12 stories per month</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Strategy focused on local lead generation</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Advanced online reputation management</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Presence and optimization in leading directories: Google Business Profile, Bing Places, Yelp, Nextdoor, Apple Maps, Amazon Alexa, Facebook Business, Yellow Pages</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Up to 10,000 monthly visits on Google and website</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Monthly reports focused on leads received</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Continuous priority support</span></li>
+                        </ul>
+                        <a href="https://wa.me/17867556238?text=I'm%20interested%20in%20the%20BUSINESS%20GROWTH%20Plan" target="_blank" rel="noopener" class="pricing-cta">Select Plan</a>
+                    </div>
+
+                    <!-- Plan 3: SMART PERFORMANCE -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">SMART PERFORMANCE</h3>
+                            <div class="pricing-price">$699<span>/month</span></div>
+                            <p class="pricing-description">Ideal for companies looking for a stable flow of leads without depending on day-to-day tasks.</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check-circle"></i> <span>Results visible from the first month.</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Strategic dominance of the TOP 3 of your industry for key searches</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Website creation or redesign with advanced conversion structure</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Professional social media management</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Optimized management of ads on Google Ads and Meta Ads</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>12 social media posts and 12 stories per month</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>System for constant lead generation</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>24/7 Response automation</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Continuous optimization to increase quantity and quality of leads</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Presence and optimization in leading directories: Google Business Profile, Bing Places, Yelp, Nextdoor, Apple Maps, Amazon Alexa, Facebook Business, Yellow Pages</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Up to 15,000 monthly visits on Google and website</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Advanced monthly report</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Strategic 1 on 1 session</span></li>
+                        </ul>
+                        <a href="https://wa.me/17867556238?text=I'm%20interested%20in%20the%20SMART%20PERFORMANCE%20Plan" target="_blank" rel="noopener" class="pricing-cta">Select Plan</a>
+                    </div>
+
+                    <!-- Plan 4: ELITE 360 -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">ELITE 360</h3>
+                            <div class="pricing-price">$999<span>/month</span></div>
+                            <p class="pricing-description">Ideal for companies that want to scale and become the primary choice in their market.</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check-circle"></i> <span>First leads: From the first month with constant flow.</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Total dominance of the TOP 3 of your industry on Google Search and Google Maps</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Premium website creation or redesign with advanced SEO</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Automated social media management</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Advanced management of ads on Google Ads and Meta Ads</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>12 social media posts and 12 stories per month</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Complete lead acquisition system</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Advanced automation of prospect follow-up</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>SMS & Email Marketing for lead follow-up</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Comprehensive management of digital presence and reputation</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Multichannel activation to maximize opportunities</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Presence and optimization in leading directories: Google Business Profile, Bing Places, Yelp, Nextdoor, Apple Maps, Amazon Alexa, Facebook Business, Yellow Pages</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Up to 20,000 monthly visits on Google and website</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Customized 360° Reports</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Monthly strategic 1 on 1 consultation</span></li>
+                        </ul>
+                        <a href="https://wa.me/17867556238?text=I'm%20interested%20in%20the%20ELITE%20360%20Plan" target="_blank" rel="noopener" class="pricing-cta">Select Plan</a>
+                    </div>
+
+                    <!-- Plan 5: ULTRA BASIC -->
+                    <div class="pricing-card ultra-basico">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">ULTRA BASIC</h3>
+                            <div class="pricing-price">$199<span>/month</span></div>
+                            <p class="pricing-description">Ideal for businesses that are just getting started and need a fast, affordable online presence.</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check-circle"></i> <span>Basic website (1-3 pages)</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Simple and functional design (mobile optimized)</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Basic SEO (initial optimization for Google)</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Optimization to appear in Google Top 3 (Search and Maps)</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Hosting included</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Monthly technical maintenance</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Perfect for new businesses that want to start online and generate their first clients.</span></li>
+                        </ul>
+                        <a href="https://wa.me/17867556238?text=I'm%20interested%20in%20the%20ULTRA%20BASIC%20Plan" target="_blank" rel="noopener" class="pricing-cta">Select Plan</a>
+                    </div>
+                </div>
+                
+                <p style="text-align: center; color: #999; font-size: 0.85rem; margin-top: 40px; padding: 0 20px; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+                    <em>Results may vary depending on industry, location and competition. We do not guarantee an exact number of leads, but rather the implementation of strategies aimed at generating real business opportunities.</em>
+                </p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="servicio-detalle" style="background: #f8f9fa;">
+            <div class="container">
+                <div class="features-comparison">
+                    <h2 style="text-align: center; margin-bottom: 10px;">Reach More Customers and Grow Your Business</h2>
+                    <p style="text-align: center; color: #666; font-size: 1.1rem; margin-bottom: 50px;">
+                        Our digital marketing plans are designed for businesses looking to stand out in the digital world, increase their visibility and generate more sales with proven strategies
+                    </p>
+
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Dashboard & CRM</h3>
+                            <p>24/7 access to actionable metrics and real-time customer management</p>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3>SEO Positioning</h3>
+                            <p>Appear in the top local search results and increase your visibility</p>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Reputation Management</h3>
+                            <p>Protect and improve your digital image with strategic responses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="plans-videos-section">
+            <div class="container">
+                <div class="plans-videos-header">
+                    <h2>Real Clients, Real Results</h2>
+                    <p>Watch video testimonials from clients who trusted Crescendo to grow their business with measurable strategies.</p>
+                </div>
+
+                <div class="plans-videos-grid">
+                    <article class="plans-video-card">
+                        <div class="plans-video-frame">
+                            <video controls preload="metadata" src="videos/Eber%20Martini.mp4"></video>
+                        </div>
+                        <div class="plans-video-meta">
+                            <h3>Eber Martini</h3>
+                            <p>A direct experience with our digital growth process.</p>
+                        </div>
+                    </article>
+
+                    <article class="plans-video-card">
+                        <div class="plans-video-frame">
+                            <video controls preload="metadata" src="videos/0316.mp4"></video>
+                        </div>
+                        <div class="plans-video-meta">
+                            <h3>Testimonial 0316</h3>
+                            <p>Another real case showing trust and results with Crescendo.</p>
+                        </div>
+                    </article>
+
+                    <article class="plans-video-card">
+                        <div class="plans-video-frame">
+                            <video controls preload="metadata" src="videos/0313.mov"></video>
+                        </div>
+                        <div class="plans-video-meta">
+                            <h3>Testimonial 0313</h3>
+                            <p>Third real testimonial to strengthen trust before selecting your plan.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="cta-final">
+            <div class="container">
+                <h2>Ready to Boost Your Business?</h2>
+                <p>Contact us today and discover how we can help you achieve your digital marketing goals with personalized strategies</p>
+                <div class="cta-buttons">
+                    <a href="tel:7867556238" class="btn btn-lg btn-primary">Call Now</a>
+                    <a href="https://wa.me/17867556238" target="_blank" rel="noopener" class="btn btn-lg btn-secondary">WhatsApp <i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Simple Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <div class="footer-bottom-content" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 20px; padding: 30px 0;">
+                    <img src="img/logo.png" alt="Crescendo Digital Marketing" style="height: 50px; width: auto;" loading="lazy">
+                    <p style="margin: 0;">&copy; 2026 Crescendo Digital Marketing Agency. <span class="footer-rights">All rights reserved.</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js?v=2026.04.04.1245" defer></script>
+<script src="js/components.js?v=2026.04.04.1245" defer></script>
+    <script>
+        // Standalone language toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize particles
+            const canvasEs = document.getElementById('particlesCanvas');
+            const canvasEn = document.getElementById('particlesCanvas-en');
+            
+            function initializeParticles() {
+                if (canvasEs && typeof initParticles === 'function') {
+                    const heroEs = canvasEs.parentElement;
+                    canvasEs.width = heroEs.clientWidth;
+                    canvasEs.height = heroEs.clientHeight;
+                    initParticles(canvasEs);
+                }
+                
+                if (canvasEn && typeof initParticles === 'function') {
+                    const heroEn = canvasEn.parentElement;
+                    canvasEn.width = heroEn.clientWidth;
+                    canvasEn.height = heroEn.clientHeight;
+                    initParticles(canvasEn);
+                }
+            }
+            
+            // Initialize on load
+            initializeParticles();
+            
+            // Reinitialize on resize
+            window.addEventListener('resize', function() {
+                initializeParticles();
+            });
+            
+            const langButtons = document.querySelectorAll('.standalone-lang-btn');
+            const contentEs = document.getElementById('content-es');
+            const contentEn = document.getElementById('content-en');
+            const footerRights = document.querySelector('.footer-rights');
+            const getPreferredLang = () => localStorage.getItem('preferredLanguage') === 'es' ? 'es' : 'en';
+
+            function applyStandaloneLanguage(lang, persist = true) {
+                langButtons.forEach(button => {
+                    button.classList.toggle('active', button.dataset.lang === lang);
+                });
+
+                if (lang === 'es') {
+                    contentEs.classList.add('active');
+                    contentEn.classList.remove('active');
+                    document.documentElement.lang = 'es';
+                    if (footerRights) footerRights.textContent = 'Todos los derechos reservados.';
+                } else {
+                    contentEs.classList.remove('active');
+                    contentEn.classList.add('active');
+                    document.documentElement.lang = 'en';
+                    if (footerRights) footerRights.textContent = 'All rights reserved.';
+                }
+
+                if (persist) {
+                    localStorage.setItem('preferredLanguage', lang);
+                }
+
+                setTimeout(initializeParticles, 100);
+                
+                if (typeof normalizeDocumentSpanishTypography === 'function') {
+                    requestAnimationFrame(() => {
+                        normalizeDocumentSpanishTypography(lang);
+                    });
+                }
+            }
+
+            applyStandaloneLanguage(getPreferredLang(), false);
+            
+            langButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const lang = this.dataset.lang;
+                    applyStandaloneLanguage(lang, true);
+                    
+                    // Scroll to top
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
