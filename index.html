@@ -339,7 +339,11 @@
     <div id="header-placeholder"></div>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero has-video-background">
+        <video class="hero-video-bg" autoplay muted loop playsinline preload="none" poster="img/hero.png" aria-hidden="true">
+            <source src="img/hero-loop.webm" type="video/webm">
+            <source src="img/hero-loop.mp4" type="video/mp4">
+        </video>
         <div class="hero-content">
             <span class="hero-eyebrow">Miami Growth Agency | SEO + Ads + Web</span>
             <h1>Turn Attention Into Booked Appointments</h1>
@@ -349,9 +353,24 @@
                 <a href="#servicios" class="btn btn-lg btn-secondary">See How We Scale Brands</a>
             </div>
             <div class="hero-proof" aria-label="Trust indicators">
-                <span><i class="fas fa-star"></i> 4.9 Rating</span>
+                <span><i class="fas fa-star"></i> 4.9/5 Google Rating</span>
+                <span><i class="fas fa-message"></i> 50+ Verified Reviews</span>
                 <span><i class="fas fa-briefcase"></i> 50+ Businesses Served</span>
                 <span><i class="fas fa-ban"></i> No Long-Term Contracts</span>
+            </div>
+            <div class="hero-media-ribbon" aria-label="Industries and brand activity">
+                <figure class="hero-media-item">
+                    <img src="img/teamwork.webp" alt="Marketing strategy session" width="340" height="220" loading="eager" decoding="async">
+                    <figcaption>Weekly Strategy Sessions</figcaption>
+                </figure>
+                <figure class="hero-media-item">
+                    <img src="img/googleads.webp" alt="Digital advertising optimization" width="340" height="220" loading="eager" decoding="async">
+                    <figcaption>Paid Ads Optimization</figcaption>
+                </figure>
+                <figure class="hero-media-item">
+                    <img src="img/localseo.webp" alt="Local SEO visibility improvements" width="340" height="220" loading="lazy" decoding="async">
+                    <figcaption>Local SEO Growth</figcaption>
+                </figure>
             </div>
             <div class="hero-split">
                 <div class="hero-stats">
@@ -377,6 +396,29 @@
                     </ul>
                     <a href="#contacto" class="hero-value-link">Book the audit now <i class="fas fa-arrow-right"></i></a>
                 </aside>
+            </div>
+            <div class="hero-results" aria-label="Recent client wins">
+                <article class="hero-result-card">
+                    <img src="img/caso1.png" alt="Case result for local business" width="240" height="150" loading="lazy" decoding="async">
+                    <div>
+                        <strong>+42% Qualified Leads</strong>
+                        <p>Local service business in 60 days</p>
+                    </div>
+                </article>
+                <article class="hero-result-card">
+                    <img src="img/caso3.png" alt="Case result for ad campaign" width="240" height="150" loading="lazy" decoding="async">
+                    <div>
+                        <strong>-31% Cost Per Lead</strong>
+                        <p>Google Ads account in 45 days</p>
+                    </div>
+                </article>
+                <article class="hero-result-card">
+                    <img src="img/caso5.png" alt="Case result for map visibility" width="240" height="150" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Top 3 on Maps</strong>
+                        <p>Multi-location brand in competitive area</p>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
