@@ -625,7 +625,7 @@ const PAGE_TRANSLATIONS = {
             description: 'Google Ads and Meta Ads campaigns optimized for conversions. Get measurable ROI with our proven digital advertising strategy.',
             text: {
                 '.hero-content h1': 'Google Ads & Meta Ads Management — Stop Burning Budget, Start Getting Clients',
-                '.hero-content > p': 'We design and manage data-driven campaigns on Google and Meta that attract ready-to-buy customers. Every dollar is tracked, optimized, and working toward measurable returns — no guesswork, no wasted spend.'
+                '.hero-content > p': 'We design and manage data-driven campaigns on Google and Meta that attract ready-to-buy customers. Every dollar is tracked, optimized, and working toward measurable returns — no guesswork, no wasted spend.',
                 '.hero-buttons .btn-primary': 'Free Audit',
                 '.hero-buttons .btn-secondary': 'View Strategy',
                 '.hero-stats .stat:nth-child(1) p': 'Average ROI on campaigns',
@@ -643,7 +643,7 @@ const PAGE_TRANSLATIONS = {
             description: 'Campanas de Google Ads y Meta Ads optimizadas para conversiones. Obtiene ROI medible con una estrategia de publicidad digital basada en datos.',
             text: {
                 '.hero-content h1': 'Gestion de Google Ads y Meta Ads — Deja de Quemar Presupuesto, Empieza a Conseguir Clientes',
-                '.hero-content > p': 'Disenamos y gestionamos campanas basadas en datos en Google y Meta que atraen clientes listos para comprar. Cada dolar se rastrea, se optimiza y trabaja para generar retorno medible — sin improvisaciones ni gasto desperdiciado.'
+                '.hero-content > p': 'Disenamos y gestionamos campanas basadas en datos en Google y Meta que atraen clientes listos para comprar. Cada dolar se rastrea, se optimiza y trabaja para generar retorno medible — sin improvisaciones ni gasto desperdiciado.',
                 '.hero-buttons .btn-primary': 'Auditoria Gratis',
                 '.hero-buttons .btn-secondary': 'Ver Estrategia',
                 '.hero-stats .stat:nth-child(1) p': 'ROI promedio en campanas',
@@ -663,7 +663,7 @@ const PAGE_TRANSLATIONS = {
             description: 'Dominate local search results in Miami. Google Business Profile optimization, local keywords, and technical SEO strategy.',
             text: {
                 '.hero-content h1': 'Get Found on Google When Customers Search Near You — Local SEO Miami',
-                '.hero-content > p': 'We position your business in the Google Local 3-Pack and Google Maps so you show up first when it matters most. Real calls, real foot traffic, real growth — without paying for every click.'
+                '.hero-content > p': 'We position your business in the Google Local 3-Pack and Google Maps so you show up first when it matters most. Real calls, real foot traffic, real growth — without paying for every click.',
                 '.hero-buttons .btn-primary': 'Free Audit',
                 '.hero-buttons .btn-secondary': 'View Strategy',
                 '.hero-stats .stat:nth-child(1) p': 'Average increase in local traffic',
@@ -680,7 +680,7 @@ const PAGE_TRANSLATIONS = {
             description: 'Domina los resultados de busqueda local en Miami. Optimizacion de Google Business Profile, palabras clave locales y estrategia SEO tecnica.',
             text: {
                 '.hero-content h1': 'Aparece en Google Cuando Tus Clientes Buscan Cerca — SEO Local Miami',
-                '.hero-content > p': 'Posicionamos tu negocio en el Local 3-Pack de Google y en Google Maps para que aparezcas primero cuando mas importa. Llamadas reales, visitas reales, crecimiento real — sin pagar por cada clic.'
+                '.hero-content > p': 'Posicionamos tu negocio en el Local 3-Pack de Google y en Google Maps para que aparezcas primero cuando mas importa. Llamadas reales, visitas reales, crecimiento real — sin pagar por cada clic.',
                 '.hero-buttons .btn-primary': 'Auditoria Gratis',
                 '.hero-buttons .btn-secondary': 'Ver Estrategia',
                 '.hero-stats .stat:nth-child(1) p': 'Aumento promedio de trafico local',
@@ -699,7 +699,7 @@ const PAGE_TRANSLATIONS = {
             description: 'Professional social media management. Strategic content, engagement, and growth on Instagram, Facebook, TikTok, and LinkedIn.',
             text: {
                 '.hero-content h1': 'Social Media That Builds Your Brand and Drives Real Revenue',
-                '.hero-content > p': 'We create and manage content strategies that grow your following, boost engagement, and convert your audience into loyal customers across Instagram, Facebook, TikTok, and LinkedIn.'
+                '.hero-content > p': 'We create and manage content strategies that grow your following, boost engagement, and convert your audience into loyal customers across Instagram, Facebook, TikTok, and LinkedIn.',
                 '.hero-buttons .btn-primary': 'Free Audit',
                 '.hero-buttons .btn-secondary': 'View Services',
                 '.hero-stats .stat:nth-child(1) p': 'Average increase in engagement',
@@ -717,7 +717,7 @@ const PAGE_TRANSLATIONS = {
             description: 'Gestion profesional de redes sociales. Contenido estrategico, engagement y crecimiento en Instagram, Facebook, TikTok y LinkedIn.',
             text: {
                 '.hero-content h1': 'Redes Sociales Que Construyen Tu Marca y Generan Ingresos Reales',
-                '.hero-content > p': 'Creamos y gestionamos estrategias de contenido que hacen crecer tu comunidad, aumentan el engagement y convierten tu audiencia en clientes en Instagram, Facebook, TikTok y LinkedIn.'
+                '.hero-content > p': 'Creamos y gestionamos estrategias de contenido que hacen crecer tu comunidad, aumentan el engagement y convierten tu audiencia en clientes en Instagram, Facebook, TikTok y LinkedIn.',
                 '.hero-buttons .btn-primary': 'Auditoria Gratis',
                 '.hero-buttons .btn-secondary': 'Ver Servicios',
                 '.hero-stats .stat:nth-child(1) p': 'Aumento promedio en engagement',
@@ -737,7 +737,7 @@ const PAGE_TRANSLATIONS = {
             description: 'Professional, modern, and responsive web design. Sites optimized for conversions that work as your best salesperson 24/7.',
             text: {
                 '.hero-content h1': 'Web Design That Converts — Professional Sites Built to Turn Visitors Into Clients',
-                '.hero-content > p': 'We build fast, mobile-first websites engineered to make every visitor take action. From first impression to final click — design, speed, and copy all working together to grow your business.'
+                '.hero-content > p': 'We build fast, mobile-first websites engineered to make every visitor take action. From first impression to final click — design, speed, and copy all working together to grow your business.',
                 '.hero-buttons .btn-primary': 'Free Audit',
                 '.hero-buttons .btn-secondary': 'View Process',
                 '.hero-stats .stat:nth-child(1) p': 'Average loading time',
@@ -754,7 +754,7 @@ const PAGE_TRANSLATIONS = {
             description: 'Diseno web profesional, moderno y responsive. Sitios optimizados para conversiones que trabajan como tu mejor vendedor 24/7.',
             text: {
                 '.hero-content h1': 'Diseno Web Que Convierte — Sitios Profesionales Que Transforman Visitas en Clientes',
-                '.hero-content > p': 'Construimos sitios web rapidos, optimizados para movil y disenados para que cada visitante tome accion. Del primer impacto al clic final — diseno, velocidad y contenido trabajando juntos para hacer crecer tu negocio.'
+                '.hero-content > p': 'Construimos sitios web rapidos, optimizados para movil y disenados para que cada visitante tome accion. Del primer impacto al clic final — diseno, velocidad y contenido trabajando juntos para hacer crecer tu negocio.',
                 '.hero-buttons .btn-primary': 'Auditoria Gratis',
                 '.hero-buttons .btn-secondary': 'Ver Proceso',
                 '.hero-stats .stat:nth-child(1) p': 'Tiempo de carga promedio',
@@ -773,7 +773,7 @@ const PAGE_TRANSLATIONS = {
             description: 'Automatic 24/7 AI chat that qualifies leads and schedules appointments. Never lose a customer because you are out of office hours.',
             text: {
                 '.hero-content h1': 'AI Chat 24/7 — Capture, Qualify, and Book Leads While You Sleep',
-                '.hero-content > p': 'Our intelligent chatbot answers questions, qualifies prospects, and schedules appointments around the clock. Stop losing leads after business hours — your competition never sleeps, and now neither does your sales process.'
+                '.hero-content > p': 'Our intelligent chatbot answers questions, qualifies prospects, and schedules appointments around the clock. Stop losing leads after business hours — your competition never sleeps, and now neither does your sales process.',
                 '.hero-buttons .btn-primary': 'Request Demo',
                 '.hero-buttons .btn-secondary': 'View Benefits',
                 '.hero-stats .stat:nth-child(1) p': 'Increase in lead conversions',
@@ -790,7 +790,7 @@ const PAGE_TRANSLATIONS = {
             description: 'Chat automatico con IA 24/7 que califica leads y agenda citas. Nunca pierdas un cliente por estar fuera de horario.',
             text: {
                 '.hero-content h1': 'Chat IA 24/7 — Captura, Califica y Agenda Leads Mientras Duermes',
-                '.hero-content > p': 'Nuestro chatbot inteligente responde preguntas, califica prospectos y agenda citas las 24 horas. Deja de perder leads despues del horario laboral — la competencia no descansa, y ahora tampoco tu proceso de ventas.'
+                '.hero-content > p': 'Nuestro chatbot inteligente responde preguntas, califica prospectos y agenda citas las 24 horas. Deja de perder leads despues del horario laboral — la competencia no descansa, y ahora tampoco tu proceso de ventas.',
                 '.hero-buttons .btn-primary': 'Solicitar Demo',
                 '.hero-buttons .btn-secondary': 'Ver Beneficios',
                 '.hero-stats .stat:nth-child(1) p': 'Aumento en conversion de leads',
@@ -809,7 +809,7 @@ const PAGE_TRANSLATIONS = {
             description: 'Professional management of your online reputation. We monitor, respond, and improve what is said about your brand on the internet.',
             text: {
                 '.hero-content h1': 'Online Reputation That Protects Your Brand and Wins More Clients',
-                '.hero-content > p': 'We monitor, respond to, and actively improve what is being said about your business online. Turn your reviews into your strongest sales asset — before a single negative comment costs you a customer.'
+                '.hero-content > p': 'We monitor, respond to, and actively improve what is being said about your business online. Turn your reviews into your strongest sales asset — before a single negative comment costs you a customer.',
                 '.hero-buttons .btn-primary': 'Reputation Audit',
                 '.hero-buttons .btn-secondary': 'View Services',
                 '.hero-stats .stat:nth-child(1) p': 'Average rating managed',
@@ -827,7 +827,7 @@ const PAGE_TRANSLATIONS = {
             description: 'Gestion profesional de tu reputacion online. Monitoreamos, respondemos y mejoramos lo que se dice de tu marca en internet.',
             text: {
                 '.hero-content h1': 'Reputacion Online Que Protege Tu Marca y Gana Mas Clientes',
-                '.hero-content > p': 'Monitoreamos, respondemos y mejoramos activamente lo que se dice de tu negocio en internet. Convierte tus resenas en tu herramienta de ventas mas poderosa — antes de que un solo comentario negativo te cueste un cliente.'
+                '.hero-content > p': 'Monitoreamos, respondemos y mejoramos activamente lo que se dice de tu negocio en internet. Convierte tus resenas en tu herramienta de ventas mas poderosa — antes de que un solo comentario negativo te cueste un cliente.',
                 '.hero-buttons .btn-primary': 'Auditoria de Reputacion',
                 '.hero-buttons .btn-secondary': 'Ver Servicios',
                 '.hero-stats .stat:nth-child(1) p': 'Calificacion promedio gestionada',
