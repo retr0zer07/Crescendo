@@ -153,22 +153,19 @@
     
     <!-- Preload Critical Resources -->
     <link rel="preload" href="css/styles.css?v=2026.04.04.1245" as="style">
+    <!-- Preload LCP images -->
+    <link rel="preload" as="image" href="img/hero.png" fetchpriority="high">
+    <link rel="preload" as="image" href="img/teamwork.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="img/googleads.webp">
     
     <link rel="stylesheet" href="css/styles.css?v=2026.04.04.1245">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
-
-    <!-- Deferred Webchat Widget -->
-    <script 
-  src="https://widgets.leadconnectorhq.com/loader.js"  
-  data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" 
- data-widget-id="69bbecd0a150e63d82d548cb"   > 
- </script>
     
         <!-- Review widget desactivado: SDK URL retorna 404 -->
     
@@ -362,11 +359,11 @@
             </div>
             <div class="hero-media-ribbon" aria-label="Industries and brand activity">
                 <figure class="hero-media-item">
-                    <img src="img/teamwork.webp" alt="Marketing strategy session" width="340" height="220" loading="eager" decoding="async">
+                    <img src="img/teamwork.webp" alt="Marketing strategy session" width="340" height="220" loading="eager" decoding="async" fetchpriority="high">
                     <figcaption>Weekly Strategy Sessions</figcaption>
                 </figure>
                 <figure class="hero-media-item">
-                    <img src="img/googleads.webp" alt="Digital advertising optimization" width="340" height="220" loading="eager" decoding="async">
+                    <img src="img/googleads.webp" alt="Digital advertising optimization" width="340" height="220" loading="eager" decoding="async" fetchpriority="high">
                     <figcaption>Paid Ads Optimization</figcaption>
                 </figure>
                 <figure class="hero-media-item">
@@ -909,6 +906,12 @@
     <!-- Footer -->
     <div id="footer-placeholder"></div>
 
+    <!-- Deferred Webchat Widget (moved here to unblock initial render) -->
+    <script defer
+      src="https://widgets.leadconnectorhq.com/loader.js"
+      data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+      data-widget-id="69bbecd0a150e63d82d548cb">
+    </script>
     <script src="js/components.js?v=2026.04.04.1245" defer></script>
     <script src="js/script.js?v=2026.04.04.1245" defer></script>
         <script>
