@@ -53,8 +53,8 @@ const I18N_STRINGS = {
         socialInstagram: 'Instagram',
         socialFacebook: 'Facebook',
         socialWhatsapp: 'WhatsApp',
-        testimonialsHeroTitle: 'Video Testimonials',
-        testimonialsHeroDescription: 'A gallery designed to strengthen trust in the project through real client videos.',
+        testimonialsHeroTitle: 'Hear From Our Clients — Real Video Testimonials',
+        testimonialsHeroDescription: 'Watch real business owners talk about the results they achieved with Crescendo. No scripts, no stock footage — just genuine stories of growth.',
         testimonialsIntroTitle: 'Real Stories From Real Clients',
         testimonialsIntroDescription: 'Each video shows direct experiences from brands that trusted Crescendo to grow their visibility, leads, and results.',
         testimonialsSlotLabel: 'Video slot',
@@ -68,7 +68,7 @@ const I18N_STRINGS = {
         testimonialsCard3Title: 'Nicky Massage',
         testimonialsCard3Description: 'A third video that adds more social proof and confidence for future clients.',
         logoAlt: 'Crescendo Digital Marketing',
-        heroTitle: 'More Clients. Less Guesswork.',
+        heroTitle: "Miami's Leading Digital Marketing Agency for Real Growth",
         heroDescription: 'We build the digital engine that fills your calendar - with SEO, Ads, and Web Design built to convert.',
         heroBtnAudit: 'Get My Free Growth Audit',
         heroBtnServices: 'View Services',
@@ -266,8 +266,8 @@ const I18N_STRINGS = {
         socialInstagram: 'Instagram',
         socialFacebook: 'Facebook',
         socialWhatsapp: 'WhatsApp',
-        testimonialsHeroTitle: 'Testimonios en Video',
-        testimonialsHeroDescription: 'Una galeria pensada para reforzar la confianza en el proyecto con videos reales de clientes.',
+        testimonialsHeroTitle: 'Escucha a Nuestros Clientes — Testimonios Reales en Video',
+        testimonialsHeroDescription: 'Mira a duenos de negocios reales hablar sobre los resultados que lograron con Crescendo. Sin guiones, sin actores — solo historias genuinas de crecimiento.',
         testimonialsIntroTitle: 'Historias Reales de Clientes Reales',
         testimonialsIntroDescription: 'Cada video muestra experiencias directas de marcas que confiaron en Crescendo para crecer en visibilidad, leads y resultados.',
         testimonialsSlotLabel: 'Espacio de video',
@@ -281,7 +281,7 @@ const I18N_STRINGS = {
         testimonialsCard3Title: 'Nicky Massage',
         testimonialsCard3Description: 'Un tercer video que suma mas prueba social y confianza para futuros clientes.',
         logoAlt: 'Crescendo Digital Marketing',
-        heroTitle: 'Mas clientes. Menos improvisacion.',
+        heroTitle: 'La agencia de marketing digital #1 en Miami',
         heroDescription: 'Construimos el motor digital que llena tu agenda: SEO, Ads y Diseno Web pensados para convertir.',
         heroBtnAudit: 'Quiero Mi Auditoria de Crecimiento',
         heroBtnServices: 'Ver Servicios',
@@ -624,8 +624,8 @@ const PAGE_TRANSLATIONS = {
             title: 'Google Ads and Meta Ads | Digital Advertising Campaigns | Crescendo Digital',
             description: 'Google Ads and Meta Ads campaigns optimized for conversions. Get measurable ROI with our proven digital advertising strategy.',
             text: {
-                '.hero-content h1': 'Google Ads & Meta Ads Management - PPC Agency for Miami Businesses',
-                '.hero-content > p': 'Digital advertising campaigns optimized for conversions. Get measurable ROI with data-driven strategies that generate leads and sales.',
+                '.hero-content h1': 'Google Ads & Meta Ads Management — Stop Burning Budget, Start Getting Clients',
+                '.hero-content > p': 'We design and manage data-driven campaigns on Google and Meta that attract ready-to-buy customers. Every dollar is tracked, optimized, and working toward measurable returns — no guesswork, no wasted spend.'
                 '.hero-buttons .btn-primary': 'Free Audit',
                 '.hero-buttons .btn-secondary': 'View Strategy',
                 '.hero-stats .stat:nth-child(1) p': 'Average ROI on campaigns',
@@ -642,8 +642,8 @@ const PAGE_TRANSLATIONS = {
             title: 'Google Ads y Meta Ads | Campanas de Publicidad Digital | Crescendo Digital',
             description: 'Campanas de Google Ads y Meta Ads optimizadas para conversiones. Obtiene ROI medible con una estrategia de publicidad digital basada en datos.',
             text: {
-                '.hero-content h1': 'Gestion de Google Ads y Meta Ads - Agencia PPC para Negocios en Miami',
-                '.hero-content > p': 'Campanas de publicidad digital optimizadas para conversiones. Obtiene ROI medible con estrategias basadas en datos que generan leads y ventas.',
+                '.hero-content h1': 'Gestion de Google Ads y Meta Ads — Deja de Quemar Presupuesto, Empieza a Conseguir Clientes',
+                '.hero-content > p': 'Disenamos y gestionamos campanas basadas en datos en Google y Meta que atraen clientes listos para comprar. Cada dolar se rastrea, se optimiza y trabaja para generar retorno medible — sin improvisaciones ni gasto desperdiciado.'
                 '.hero-buttons .btn-primary': 'Auditoria Gratis',
                 '.hero-buttons .btn-secondary': 'Ver Estrategia',
                 '.hero-stats .stat:nth-child(1) p': 'ROI promedio en campanas',
@@ -662,8 +662,8 @@ const PAGE_TRANSLATIONS = {
             title: 'Local SEO Miami | Google Maps Ranking | Crescendo Digital',
             description: 'Dominate local search results in Miami. Google Business Profile optimization, local keywords, and technical SEO strategy.',
             text: {
-                '.hero-content h1': 'Local SEO in Miami',
-                '.hero-content > p': 'Dominate search results in your area. Position yourself in the Google Local 3-Pack and attract customers who are searching for you now.',
+                '.hero-content h1': 'Get Found on Google When Customers Search Near You — Local SEO Miami',
+                '.hero-content > p': 'We position your business in the Google Local 3-Pack and Google Maps so you show up first when it matters most. Real calls, real foot traffic, real growth — without paying for every click.'
                 '.hero-buttons .btn-primary': 'Free Audit',
                 '.hero-buttons .btn-secondary': 'View Strategy',
                 '.hero-stats .stat:nth-child(1) p': 'Average increase in local traffic',
@@ -679,8 +679,8 @@ const PAGE_TRANSLATIONS = {
             title: 'SEO Local Miami | Posicionamiento en Google Maps | Crescendo Digital',
             description: 'Domina los resultados de busqueda local en Miami. Optimizacion de Google Business Profile, palabras clave locales y estrategia SEO tecnica.',
             text: {
-                '.hero-content h1': 'SEO Local en Miami',
-                '.hero-content > p': 'Domina los resultados de busqueda en tu zona. Posicionate en el Local 3-Pack de Google y atrae clientes que te estan buscando ahora.',
+                '.hero-content h1': 'Aparece en Google Cuando Tus Clientes Buscan Cerca — SEO Local Miami',
+                '.hero-content > p': 'Posicionamos tu negocio en el Local 3-Pack de Google y en Google Maps para que aparezcas primero cuando mas importa. Llamadas reales, visitas reales, crecimiento real — sin pagar por cada clic.'
                 '.hero-buttons .btn-primary': 'Auditoria Gratis',
                 '.hero-buttons .btn-secondary': 'Ver Estrategia',
                 '.hero-stats .stat:nth-child(1) p': 'Aumento promedio de trafico local',
@@ -698,8 +698,8 @@ const PAGE_TRANSLATIONS = {
             title: 'Social Media Marketing | Social Media Management | Crescendo Digital',
             description: 'Professional social media management. Strategic content, engagement, and growth on Instagram, Facebook, TikTok, and LinkedIn.',
             text: {
-                '.hero-content h1': 'Social Media Marketing',
-                '.hero-content > p': 'We build loyal communities around your brand. Strategic content that generates engagement, trust, and sales.',
+                '.hero-content h1': 'Social Media That Builds Your Brand and Drives Real Revenue',
+                '.hero-content > p': 'We create and manage content strategies that grow your following, boost engagement, and convert your audience into loyal customers across Instagram, Facebook, TikTok, and LinkedIn.'
                 '.hero-buttons .btn-primary': 'Free Audit',
                 '.hero-buttons .btn-secondary': 'View Services',
                 '.hero-stats .stat:nth-child(1) p': 'Average increase in engagement',
@@ -716,8 +716,8 @@ const PAGE_TRANSLATIONS = {
             title: 'Marketing en Redes Sociales | Gestion de Social Media | Crescendo Digital',
             description: 'Gestion profesional de redes sociales. Contenido estrategico, engagement y crecimiento en Instagram, Facebook, TikTok y LinkedIn.',
             text: {
-                '.hero-content h1': 'Marketing en Redes Sociales',
-                '.hero-content > p': 'Construimos comunidades fieles alrededor de tu marca. Contenido estrategico que genera engagement, confianza y ventas.',
+                '.hero-content h1': 'Redes Sociales Que Construyen Tu Marca y Generan Ingresos Reales',
+                '.hero-content > p': 'Creamos y gestionamos estrategias de contenido que hacen crecer tu comunidad, aumentan el engagement y convierten tu audiencia en clientes en Instagram, Facebook, TikTok y LinkedIn.'
                 '.hero-buttons .btn-primary': 'Auditoria Gratis',
                 '.hero-buttons .btn-secondary': 'Ver Servicios',
                 '.hero-stats .stat:nth-child(1) p': 'Aumento promedio en engagement',
@@ -736,8 +736,8 @@ const PAGE_TRANSLATIONS = {
             title: 'Professional Web Design | Sites That Convert | Crescendo Digital',
             description: 'Professional, modern, and responsive web design. Sites optimized for conversions that work as your best salesperson 24/7.',
             text: {
-                '.hero-content h1': 'Web Design That Converts',
-                '.hero-content > p': 'Modern, fast, and conversion-optimized websites. Your best salesperson working 24/7.',
+                '.hero-content h1': 'Web Design That Converts — Professional Sites Built to Turn Visitors Into Clients',
+                '.hero-content > p': 'We build fast, mobile-first websites engineered to make every visitor take action. From first impression to final click — design, speed, and copy all working together to grow your business.'
                 '.hero-buttons .btn-primary': 'Free Audit',
                 '.hero-buttons .btn-secondary': 'View Process',
                 '.hero-stats .stat:nth-child(1) p': 'Average loading time',
@@ -753,8 +753,8 @@ const PAGE_TRANSLATIONS = {
             title: 'Diseno Web Profesional | Sitios Que Convierten | Crescendo Digital',
             description: 'Diseno web profesional, moderno y responsive. Sitios optimizados para conversiones que trabajan como tu mejor vendedor 24/7.',
             text: {
-                '.hero-content h1': 'Diseno Web Que Convierte',
-                '.hero-content > p': 'Sitios web modernos, rapidos y optimizados para conversiones. Tu mejor vendedor trabajando 24/7.',
+                '.hero-content h1': 'Diseno Web Que Convierte — Sitios Profesionales Que Transforman Visitas en Clientes',
+                '.hero-content > p': 'Construimos sitios web rapidos, optimizados para movil y disenados para que cada visitante tome accion. Del primer impacto al clic final — diseno, velocidad y contenido trabajando juntos para hacer crecer tu negocio.'
                 '.hero-buttons .btn-primary': 'Auditoria Gratis',
                 '.hero-buttons .btn-secondary': 'Ver Proceso',
                 '.hero-stats .stat:nth-child(1) p': 'Tiempo de carga promedio',
@@ -772,8 +772,8 @@ const PAGE_TRANSLATIONS = {
             title: '24/7 AI Chat | Intelligent Chatbot for Your Website | Crescendo Digital',
             description: 'Automatic 24/7 AI chat that qualifies leads and schedules appointments. Never lose a customer because you are out of office hours.',
             text: {
-                '.hero-content h1': '24/7 AI Chat',
-                '.hero-content > p': 'Intelligent chatbot that qualifies leads, schedules appointments, and answers questions. Never lose a customer for being out of office hours.',
+                '.hero-content h1': 'AI Chat 24/7 — Capture, Qualify, and Book Leads While You Sleep',
+                '.hero-content > p': 'Our intelligent chatbot answers questions, qualifies prospects, and schedules appointments around the clock. Stop losing leads after business hours — your competition never sleeps, and now neither does your sales process.'
                 '.hero-buttons .btn-primary': 'Request Demo',
                 '.hero-buttons .btn-secondary': 'View Benefits',
                 '.hero-stats .stat:nth-child(1) p': 'Increase in lead conversions',
@@ -789,8 +789,8 @@ const PAGE_TRANSLATIONS = {
             title: 'Chat IA 24/7 | Chatbot Inteligente Para Tu Sitio Web | Crescendo Digital',
             description: 'Chat automatico con IA 24/7 que califica leads y agenda citas. Nunca pierdas un cliente por estar fuera de horario.',
             text: {
-                '.hero-content h1': 'Chat IA 24/7',
-                '.hero-content > p': 'Chatbot inteligente que califica leads, agenda citas y responde preguntas. Nunca pierdas un cliente por estar fuera de horario.',
+                '.hero-content h1': 'Chat IA 24/7 — Captura, Califica y Agenda Leads Mientras Duermes',
+                '.hero-content > p': 'Nuestro chatbot inteligente responde preguntas, califica prospectos y agenda citas las 24 horas. Deja de perder leads despues del horario laboral — la competencia no descansa, y ahora tampoco tu proceso de ventas.'
                 '.hero-buttons .btn-primary': 'Solicitar Demo',
                 '.hero-buttons .btn-secondary': 'Ver Beneficios',
                 '.hero-stats .stat:nth-child(1) p': 'Aumento en conversion de leads',
@@ -808,8 +808,8 @@ const PAGE_TRANSLATIONS = {
             title: 'Online Reputation | Digital Brand Management | Crescendo Digital',
             description: 'Professional management of your online reputation. We monitor, respond, and improve what is said about your brand on the internet.',
             text: {
-                '.hero-content h1': 'Online Reputation that Protects and Converts',
-                '.hero-content > p': 'Monitor, respond, and position positive content before a negative comment affects your sales.',
+                '.hero-content h1': 'Online Reputation That Protects Your Brand and Wins More Clients',
+                '.hero-content > p': 'We monitor, respond to, and actively improve what is being said about your business online. Turn your reviews into your strongest sales asset — before a single negative comment costs you a customer.'
                 '.hero-buttons .btn-primary': 'Reputation Audit',
                 '.hero-buttons .btn-secondary': 'View Services',
                 '.hero-stats .stat:nth-child(1) p': 'Average rating managed',
@@ -826,8 +826,8 @@ const PAGE_TRANSLATIONS = {
             title: 'Reputacion Online | Gestion de Marca Digital | Crescendo Digital',
             description: 'Gestion profesional de tu reputacion online. Monitoreamos, respondemos y mejoramos lo que se dice de tu marca en internet.',
             text: {
-                '.hero-content h1': 'Reputacion Online Que Protege y Convierte',
-                '.hero-content > p': 'Monitorea, responde y posiciona contenido positivo antes de que un comentario negativo afecte tus ventas.',
+                '.hero-content h1': 'Reputacion Online Que Protege Tu Marca y Gana Mas Clientes',
+                '.hero-content > p': 'Monitoreamos, respondemos y mejoramos activamente lo que se dice de tu negocio en internet. Convierte tus resenas en tu herramienta de ventas mas poderosa — antes de que un solo comentario negativo te cueste un cliente.'
                 '.hero-buttons .btn-primary': 'Auditoria de Reputacion',
                 '.hero-buttons .btn-secondary': 'Ver Servicios',
                 '.hero-stats .stat:nth-child(1) p': 'Calificacion promedio gestionada',
@@ -986,8 +986,10 @@ const PAGE_TRANSLATIONS = {
             title: 'Blog | Digital Marketing Tips | Crescendo Digital',
             description: 'Articles and guides on digital marketing strategy, SEO, Google Ads, social media and growth hacking.',
             text: {
-                '.hero-content h1': 'Crescendo Digital Blog',
-                '.hero-content > p': 'Strategies, tips and guides to master digital marketing in 2025.',
+                '.hero-content h1': 'Crescendo Digital Blog — Marketing Strategies That Actually Work',
+                '.hero-content > p': 'Practical guides, expert tips, and data-backed strategies to help your business grow online. New content every week covering Local SEO, paid ads, social media, and web design.',
+                '.hero-buttons .btn-primary': 'Get Free Audit',
+                '.hero-buttons .btn-secondary': 'View Services'
                 '.servicio-detalle .container > h2:nth-of-type(1)': 'Recent Articles',
                 '.servicio-detalle .container > h2:nth-of-type(2)': 'Categories',
                 '.cta-final h2': 'Need More than Articles?',
@@ -999,8 +1001,10 @@ const PAGE_TRANSLATIONS = {
             title: 'Blog | Consejos de Marketing Digital | Crescendo Digital',
             description: 'Articulos y guias sobre estrategia de marketing digital, SEO, Google Ads, social media y growth hacking.',
             text: {
-                '.hero-content h1': 'Blog de Crescendo Digital',
-                '.hero-content > p': 'Estrategias, consejos y guias para dominar el marketing digital en 2025.',
+                '.hero-content h1': 'Blog de Crescendo Digital — Estrategias de Marketing Que Realmente Funcionan',
+                '.hero-content > p': 'Guias practicas, consejos de expertos y estrategias basadas en datos para hacer crecer tu negocio online. Contenido nuevo cada semana sobre SEO Local, anuncios, redes sociales y diseno web.',
+                '.hero-buttons .btn-primary': 'Obtener Auditoria Gratis',
+                '.hero-buttons .btn-secondary': 'Ver Servicios'
                 '.servicio-detalle .container > h2:nth-of-type(1)': 'Articulos Recientes',
                 '.servicio-detalle .container > h2:nth-of-type(2)': 'Categorias',
                 '.cta-final h2': 'Necesitas Mas que Articulos?',
@@ -1014,8 +1018,10 @@ const PAGE_TRANSLATIONS = {
             title: 'Success Stories | Business Growth | Crescendo Digital',
             description: 'Real cases of clients who grew significantly with our digital marketing strategies.',
             text: {
-                '.hero-content h1': 'Success Stories',
-                '.hero-content > p': 'Real stories of how we helped businesses like yours grow exponentially.',
+                '.hero-content h1': 'Real Results From Real Businesses — Crescendo Success Stories',
+                '.hero-content > p': 'Numbers don\'t lie. See how businesses across multiple industries grew their traffic, leads, and revenue with tailored digital marketing strategies from Crescendo.',
+                '.hero-buttons .btn-primary': 'Schedule Free Audit',
+                '.hero-buttons .btn-secondary': 'View Services'
                 '.servicio-detalle .container > h2:nth-of-type(1)': 'Real Results for Real Clients',
                 '.cta-final h2': 'Tell Us About Your Business',
                 '.cta-final p': 'We will do a free audit and show you what is possible',
@@ -1029,8 +1035,10 @@ const PAGE_TRANSLATIONS = {
             title: 'Casos de Exito | Crecimiento de Negocios | Crescendo Digital',
             description: 'Casos reales de clientes que crecieron significativamente con nuestras estrategias de marketing digital.',
             text: {
-                '.hero-content h1': 'Casos de Exito',
-                '.hero-content > p': 'Historias reales de como ayudamos a negocios como el tuyo a crecer de forma exponencial.',
+                '.hero-content h1': 'Resultados Reales de Negocios Reales — Casos de Exito Crescendo',
+                '.hero-content > p': 'Los numeros no mienten. Mira como negocios de distintas industrias aumentaron su trafico, leads e ingresos con estrategias de marketing digital a medida de Crescendo.',
+                '.hero-buttons .btn-primary': 'Agendar Auditoria Gratis',
+                '.hero-buttons .btn-secondary': 'Ver Servicios'
                 '.servicio-detalle .container > h2:nth-of-type(1)': 'Resultados Reales para Clientes Reales',
                 '.cta-final h2': 'Cuentanos Sobre Tu Negocio',
                 '.cta-final p': 'Haremos una auditoria gratuita y te mostraremos lo que es posible',
