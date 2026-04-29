@@ -989,7 +989,7 @@ const PAGE_TRANSLATIONS = {
                 '.hero-content h1': 'Crescendo Digital Blog — Marketing Strategies That Actually Work',
                 '.hero-content > p': 'Practical guides, expert tips, and data-backed strategies to help your business grow online. New content every week covering Local SEO, paid ads, social media, and web design.',
                 '.hero-buttons .btn-primary': 'Get Free Audit',
-                '.hero-buttons .btn-secondary': 'View Services'
+                '.hero-buttons .btn-secondary': 'View Services',
                 '.servicio-detalle .container > h2:nth-of-type(1)': 'Recent Articles',
                 '.servicio-detalle .container > h2:nth-of-type(2)': 'Categories',
                 '.cta-final h2': 'Need More than Articles?',
@@ -1004,7 +1004,7 @@ const PAGE_TRANSLATIONS = {
                 '.hero-content h1': 'Blog de Crescendo Digital — Estrategias de Marketing Que Realmente Funcionan',
                 '.hero-content > p': 'Guias practicas, consejos de expertos y estrategias basadas en datos para hacer crecer tu negocio online. Contenido nuevo cada semana sobre SEO Local, anuncios, redes sociales y diseno web.',
                 '.hero-buttons .btn-primary': 'Obtener Auditoria Gratis',
-                '.hero-buttons .btn-secondary': 'Ver Servicios'
+                '.hero-buttons .btn-secondary': 'Ver Servicios',
                 '.servicio-detalle .container > h2:nth-of-type(1)': 'Articulos Recientes',
                 '.servicio-detalle .container > h2:nth-of-type(2)': 'Categorias',
                 '.cta-final h2': 'Necesitas Mas que Articulos?',
@@ -1021,7 +1021,7 @@ const PAGE_TRANSLATIONS = {
                 '.hero-content h1': 'Real Results From Real Businesses — Crescendo Success Stories',
                 '.hero-content > p': 'Numbers don\'t lie. See how businesses across multiple industries grew their traffic, leads, and revenue with tailored digital marketing strategies from Crescendo.',
                 '.hero-buttons .btn-primary': 'Schedule Free Audit',
-                '.hero-buttons .btn-secondary': 'View Services'
+                '.hero-buttons .btn-secondary': 'View Services',
                 '.servicio-detalle .container > h2:nth-of-type(1)': 'Real Results for Real Clients',
                 '.cta-final h2': 'Tell Us About Your Business',
                 '.cta-final p': 'We will do a free audit and show you what is possible',
@@ -1038,7 +1038,7 @@ const PAGE_TRANSLATIONS = {
                 '.hero-content h1': 'Resultados Reales de Negocios Reales — Casos de Exito Crescendo',
                 '.hero-content > p': 'Los numeros no mienten. Mira como negocios de distintas industrias aumentaron su trafico, leads e ingresos con estrategias de marketing digital a medida de Crescendo.',
                 '.hero-buttons .btn-primary': 'Agendar Auditoria Gratis',
-                '.hero-buttons .btn-secondary': 'Ver Servicios'
+                '.hero-buttons .btn-secondary': 'Ver Servicios',
                 '.servicio-detalle .container > h2:nth-of-type(1)': 'Resultados Reales para Clientes Reales',
                 '.cta-final h2': 'Cuentanos Sobre Tu Negocio',
                 '.cta-final p': 'Haremos una auditoria gratuita y te mostraremos lo que es posible',
