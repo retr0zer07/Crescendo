@@ -149,18 +149,23 @@ const I18N_STRINGS = {
         case3Aria: 'See more results from Tech E-commerce',
         caseLinkText: 'See more results',
         trustedByText: 'Trusted by over 50 businesses in South Florida',
-        comparisonTitle: 'Why Are We Different?',
-        comparisonDescription: 'See why growing businesses in Miami choose us over larger agencies',
-        comparisonHeaderFeature: 'Feature',
-        comparisonHeaderUs: 'Us',
-        comparisonHeaderCompetitors: 'Competitors',
-        comparisonRow1: 'No Long-Term Contracts',
-        comparisonRow2: 'AI Chat 24/7',
-        comparisonRow3: 'Detailed Monthly Reports',
-        comparisonRow4: 'Results Guarantee',
-        comparisonRow5: 'Google Partner Certified Team',
-        comparisonRow6: '24/7 Support',
-        comparisonRow7: 'Competitive Analysis Included',
+        comparisonTitle: 'We Don\'t Sell Marketing. We Build Revenue Systems.',
+        comparisonDescription: 'We are not here to sell random tactics. We commit to measurable progress, clear accountability, and decisions that protect your budget.',
+        comparisonCommitmentTitle: 'What We Promise as a Brand',
+        comparisonCommitmentDescription: 'When you work with Crescendo, your business goals become our operating standard. If a strategy is not moving revenue, we adjust fast and transparently.',
+        comparisonPillar1: 'We prioritize profitable growth over vanity metrics.',
+        comparisonPillar2: 'We report what is working, what is not, and what changes next.',
+        comparisonPillar3: 'We earn retention through performance, not long contracts.',
+        comparisonHeaderFeature: 'Our Commitment',
+        comparisonHeaderCompetitors: 'What It Means For Your Business',
+        comparisonRow1: 'No long-term lock-ins',
+        comparisonRow2: 'Weekly optimization rhythm',
+        comparisonRow3: 'Radical transparency',
+        comparisonRow4: 'Senior-level strategic oversight',
+        comparisonRow1Detail: 'You stay with us because results are clear, not because a contract traps you.',
+        comparisonRow2Detail: 'Your ads, SEO, and pages improve continuously instead of being "set and forgotten."',
+        comparisonRow3Detail: 'You get plain-language reporting tied to leads, calls, and revenue impact.',
+        comparisonRow4Detail: 'You work with specialists who adapt strategy quickly to your market and goals.',
         processTitle: 'How It Works',
         processDescription: 'Three steps from your first call to a calendar full of new clients',
         processStep1Title: 'We Find Your Gaps (Free)',
@@ -362,18 +367,23 @@ const I18N_STRINGS = {
         case3Aria: 'Ver mas resultados de E-commerce Tech',
         caseLinkText: 'Ver mas resultados',
         trustedByText: 'Con la confianza de mas de 50 negocios en South Florida',
-        comparisonTitle: 'Por Que Somos Diferentes?',
-        comparisonDescription: 'Mira por que los negocios en crecimiento de Miami nos eligen frente a agencias mas grandes',
-        comparisonHeaderFeature: 'Caracteristica',
-        comparisonHeaderUs: 'Nosotros',
-        comparisonHeaderCompetitors: 'Competencia',
-        comparisonRow1: 'Sin contratos a largo plazo',
-        comparisonRow2: 'Chat IA 24/7',
-        comparisonRow3: 'Reportes mensuales detallados',
-        comparisonRow4: 'Garantia de resultados',
-        comparisonRow5: 'Equipo certificado por Google Partner',
-        comparisonRow6: 'Soporte 24/7',
-        comparisonRow7: 'Analisis competitivo incluido',
+        comparisonTitle: 'No vendemos marketing. Construimos sistemas de ingresos.',
+        comparisonDescription: 'No estamos para vender tacticas al azar. Nos comprometemos con progreso medible, responsabilidad clara y decisiones que cuidan tu presupuesto.',
+        comparisonCommitmentTitle: 'Lo Que Prometemos Como Marca',
+        comparisonCommitmentDescription: 'Cuando trabajas con Crescendo, tus objetivos se convierten en nuestro estandar operativo. Si una estrategia no mueve ingresos, la corregimos rapido y con total transparencia.',
+        comparisonPillar1: 'Priorizamos crecimiento rentable por encima de metricas de vanidad.',
+        comparisonPillar2: 'Te mostramos que funciona, que no funciona y que cambia despues.',
+        comparisonPillar3: 'Nos ganamos tu continuidad con resultados, no con contratos largos.',
+        comparisonHeaderFeature: 'Nuestro Compromiso',
+        comparisonHeaderCompetitors: 'Lo Que Significa Para Tu Negocio',
+        comparisonRow1: 'Sin ataduras a largo plazo',
+        comparisonRow2: 'Optimizacion semanal constante',
+        comparisonRow3: 'Transparencia radical',
+        comparisonRow4: 'Supervision estrategica senior',
+        comparisonRow1Detail: 'Sigues con nosotros por resultados reales, no porque un contrato te ate.',
+        comparisonRow2Detail: 'Tus Ads, SEO y paginas mejoran cada semana en lugar de quedar en piloto automatico.',
+        comparisonRow3Detail: 'Recibes reportes claros conectados con leads, llamadas e impacto en ingresos.',
+        comparisonRow4Detail: 'Trabajas con especialistas que ajustan la estrategia segun tu mercado y objetivos.',
         processTitle: 'Asi Funciona',
         processDescription: 'Tres pasos desde tu primera llamada hasta una agenda llena de nuevos clientes',
         processStep1Title: 'Detectamos Tus Brechas (Gratis)',
@@ -2293,16 +2303,21 @@ function applyHomePageTranslations(lang) {
 
     setElementText('.comparativa .section-header h2', 'comparisonTitle', normalizedLang);
     setElementText('.comparativa .section-header p', 'comparisonDescription', normalizedLang);
+    setElementText('.comparison-commitment h3', 'comparisonCommitmentTitle', normalizedLang);
+    setElementText('.comparison-commitment > p', 'comparisonCommitmentDescription', normalizedLang);
+    setElementTextWithIcon('.comparison-pillars li:nth-child(1)', 'comparisonPillar1', normalizedLang);
+    setElementTextWithIcon('.comparison-pillars li:nth-child(2)', 'comparisonPillar2', normalizedLang);
+    setElementTextWithIcon('.comparison-pillars li:nth-child(3)', 'comparisonPillar3', normalizedLang);
     setElementText('.comparison-table thead th:nth-child(1)', 'comparisonHeaderFeature', normalizedLang);
-        setElementText('.comparison-table thead th:nth-child(2) .badge-us', 'comparisonHeaderUs', normalizedLang);
-    setElementText('.comparison-table thead th:nth-child(3)', 'comparisonHeaderCompetitors', normalizedLang);
+    setElementText('.comparison-table thead th:nth-child(2)', 'comparisonHeaderCompetitors', normalizedLang);
     setElementText('.comparison-table tbody tr:nth-child(1) td:first-child', 'comparisonRow1', normalizedLang);
     setElementText('.comparison-table tbody tr:nth-child(2) td:first-child', 'comparisonRow2', normalizedLang);
     setElementText('.comparison-table tbody tr:nth-child(3) td:first-child', 'comparisonRow3', normalizedLang);
     setElementText('.comparison-table tbody tr:nth-child(4) td:first-child', 'comparisonRow4', normalizedLang);
-    setElementText('.comparison-table tbody tr:nth-child(5) td:first-child', 'comparisonRow5', normalizedLang);
-    setElementText('.comparison-table tbody tr:nth-child(6) td:first-child', 'comparisonRow6', normalizedLang);
-    setElementText('.comparison-table tbody tr:nth-child(7) td:first-child', 'comparisonRow7', normalizedLang);
+    setElementText('.comparison-table tbody tr:nth-child(1) td:nth-child(2)', 'comparisonRow1Detail', normalizedLang);
+    setElementText('.comparison-table tbody tr:nth-child(2) td:nth-child(2)', 'comparisonRow2Detail', normalizedLang);
+    setElementText('.comparison-table tbody tr:nth-child(3) td:nth-child(2)', 'comparisonRow3Detail', normalizedLang);
+    setElementText('.comparison-table tbody tr:nth-child(4) td:nth-child(2)', 'comparisonRow4Detail', normalizedLang);
 
     setElementText('.proceso .section-header h2', 'processTitle', normalizedLang);
     setElementText('.proceso .section-header p', 'processDescription', normalizedLang);
