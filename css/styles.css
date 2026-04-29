@@ -1797,11 +1797,17 @@ table td.col-comp {
     background-color: white;
     width: 100%;
     overflow-x: hidden;
+    position: relative;
 }
 
 .section-header {
     text-align: center;
     margin-bottom: 50px;
+}
+
+.proceso .section-header {
+    position: relative;
+    z-index: 6;
 }
 
 .section-header h2 {
@@ -1820,6 +1826,86 @@ table td.col-comp {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
+    position: relative;
+    z-index: 3;
+}
+
+.proceso-mascot-orbit {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .proceso-mascot-orbit {
+        display: block;
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        z-index: 4;
+        --p1-x: 0px;
+        --p1-y: 0px;
+        --a12-x: 0px;
+        --a12-y: -160px;
+        --p2-x: 0px;
+        --p2-y: 0px;
+        --a23-x: 0px;
+        --a23-y: -160px;
+        --p3-x: 0px;
+        --p3-y: 0px;
+    }
+
+    .proceso-mascot {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(140deg, #fef7da, #f5b82a);
+        border: 2px solid rgba(255, 255, 255, 0.85);
+        box-shadow: 0 10px 24px rgba(16, 29, 59, 0.22), 0 6px 20px rgba(245, 184, 42, 0.35);
+        z-index: 1;
+        transform: translate(var(--p1-x), var(--p1-y)) scale(1);
+        will-change: transform;
+    }
+
+    .proceso-mascot img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+@keyframes procesoMascotHop {
+    0% {
+        transform: translate(var(--p1-x), var(--p1-y)) scale(1);
+    }
+    18% {
+        transform: translate(var(--a12-x), var(--a12-y)) scale(1.04);
+    }
+    36% {
+        transform: translate(var(--p2-x), var(--p2-y)) scale(0.98);
+    }
+    56% {
+        transform: translate(var(--a23-x), var(--a23-y)) scale(1.03);
+    }
+    76% {
+        transform: translate(var(--p3-x), var(--p3-y)) scale(0.99);
+    }
+    88% {
+        transform: translate(var(--p3-x), calc(var(--p3-y) - 9px)) scale(1.01);
+    }
+    100% {
+        transform: translate(var(--p3-x), var(--p3-y)) scale(1);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .proceso-mascot {
+        transform: translate(var(--p3-x), var(--p3-y)) !important;
+    }
 }
 
 .paso {

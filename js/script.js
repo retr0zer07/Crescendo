@@ -208,6 +208,172 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ============================================
+    // PROCESS MASCOT ANIMATION
+    // ============================================
+
+    const processSection = document.querySelector('.proceso');
+    if (processSection) {
+        let processMascotPlayed = false;
+
+        const updateProcessMascotPath = () => {
+            if (window.innerWidth < 992) {
+                return;
+            }
+
+            const track = processSection.querySelector('.proceso-mascot-orbit');
+            const mascot = processSection.querySelector('.proceso-mascot');
+            const targets = processSection.querySelectorAll('.proceso-steps .paso .paso-numero');
+            const header = processSection.querySelector('.section-header');
+
+            if (!track || !mascot || targets.length < 3 || !header) {
+                return;
+            }
+
+            const sectionRect = processSection.getBoundingClientRect();
+            const headerRect = header.getBoundingClientRect();
+            const mascotRect = mascot.getBoundingClientRect();
+            const mascotWidth = mascotRect.width || 54;
+            const mascotHalf = mascotWidth / 2;
+
+            const getPoint = (el) => {
+                const rect = el.getBoundingClientRect();
+                return {
+                    x: (rect.left + rect.width / 2) - sectionRect.left - mascotHalf,
+                    // Keep landing above card content so the mascot sits on top of each card marker.
+                    y: (rect.top + rect.height / 2) - sectionRect.top - mascotHalf - 174
+                };
+            };
+
+            const p1 = getPoint(targets[0]);
+            const p2 = getPoint(targets[1]);
+            const p3 = getPoint(targets[2]);
+
+            const headerY = (headerRect.top + headerRect.height * 0.62) - sectionRect.top - mascotHalf;
+            const clampArcY = (value) => Math.max(12, value);
+
+            const apex12 = {
+                x: p1.x + ((p2.x - p1.x) * 0.5),
+                y: clampArcY(Math.min(headerY - 216, p1.y - 1020))
+            };
+            const apex23 = {
+                x: p2.x + ((p3.x - p2.x) * 0.5),
+                y: clampArcY(Math.min(headerY - 168, p2.y - 960))
+            };
+
+            track.style.setProperty('--p1-x', `${p1.x}px`);
+            track.style.setProperty('--p1-y', `${p1.y}px`);
+            track.style.setProperty('--a12-x', `${apex12.x}px`);
+            track.style.setProperty('--a12-y', `${apex12.y}px`);
+            track.style.setProperty('--p2-x', `${p2.x}px`);
+            track.style.setProperty('--p2-y', `${p2.y}px`);
+            track.style.setProperty('--a23-x', `${apex23.x}px`);
+            track.style.setProperty('--a23-y', `${apex23.y}px`);
+            track.style.setProperty('--p3-x', `${p3.x}px`);
+            track.style.setProperty('--p3-y', `${p3.y}px`);
+
+            if (!processMascotPlayed) {
+                mascot.style.transform = `translate(${p1.x}px, ${p1.y}px) scale(1)`;
+            } else {
+                mascot.style.transform = `translate(${p3.x}px, ${p3.y}px) scale(1)`;
+            }
+
+            return { mascot, p1, p2, p3, apex12, apex23 };
+        };
+
+        const playProcessMascotAnimation = () => {
+            if (window.innerWidth < 992 || processMascotPlayed) {
+                return;
+            }
+
+            const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            const points = updateProcessMascotPath();
+
+            if (!points || !points.mascot) {
+                return;
+            }
+
+            const { mascot, p1, p2, p3, apex12, apex23 } = points;
+
+            if (reducedMotion) {
+                mascot.style.transform = `translate(${p3.x}px, ${p3.y}px) scale(1)`;
+                processMascotPlayed = true;
+                return;
+            }
+
+            const bezierPoint = (start, control, end, t) => {
+                const inv = 1 - t;
+                return {
+                    x: (inv * inv * start.x) + (2 * inv * t * control.x) + (t * t * end.x),
+                    y: (inv * inv * start.y) + (2 * inv * t * control.y) + (t * t * end.y)
+                };
+            };
+
+            const buildHopFrames = (start, control, end, offsetStart, offsetEnd, peakScale, touchdownScale, steps, includeStart) => {
+                const frames = [];
+
+                for (let i = 0; i <= steps; i += 1) {
+                    if (!includeStart && i === 0) {
+                        continue;
+                    }
+
+                    const tLinear = i / steps;
+                    // Near-linear progression with minimal easing for a more natural jump timing.
+                    const t = 1 - Math.pow(1 - tLinear, 1.06);
+                    const point = bezierPoint(start, control, end, t);
+                    const parabola = 1 - Math.pow((t * 2) - 1, 2);
+                    const scale = i === steps
+                        ? touchdownScale
+                        : 1 + ((peakScale - 1) * parabola);
+                    const offset = offsetStart + ((offsetEnd - offsetStart) * tLinear);
+
+                    frames.push({
+                        transform: `translate(${point.x}px, ${point.y}px) scale(${scale})`,
+                        offset
+                    });
+                }
+
+                return frames;
+            };
+
+            const keyframes = [
+                { transform: `translate(${p1.x}px, ${p1.y}px) scale(1)`, offset: 0 },
+                ...buildHopFrames(p1, apex12, p2, 0, 0.44, 1.05, 0.98, 16, false),
+                ...buildHopFrames(p2, apex23, p3, 0.44, 0.86, 1.04, 0.99, 16, false),
+                { transform: `translate(${p3.x}px, ${p3.y}px) scale(1.01)`, offset: 0.93 },
+                { transform: `translate(${p3.x}px, ${p3.y}px) scale(1)`, offset: 1 }
+            ];
+
+            mascot.animate(keyframes, {
+                duration: 2400,
+                easing: 'linear',
+                fill: 'forwards'
+            });
+
+            processMascotPlayed = true;
+        };
+
+        updateProcessMascotPath();
+        window.addEventListener('resize', updateProcessMascotPath, { passive: true });
+
+        if ('IntersectionObserver' in window) {
+            const processObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        playProcessMascotAnimation();
+                        processObserver.disconnect();
+                    }
+                });
+            }, {
+                threshold: 0.35
+            });
+
+            processObserver.observe(processSection);
+        } else {
+            playProcessMascotAnimation();
+        }
+    }
+
+    // ============================================
     // ACTIVE LINK IN NAVIGATION - OPTIMIZED
     // ============================================
 
